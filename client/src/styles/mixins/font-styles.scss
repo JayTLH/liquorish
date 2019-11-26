@@ -1,0 +1,66 @@
+@import '../Fonts/fontface.scss';
+@import '../Mixins/media-queries.scss';
+@import '../Variables/colors.scss';
+
+@mixin font-hero-header {
+  font-family: "avenir next bold";
+  font-size: 60px;
+  line-height: 68px;
+}
+
+@mixin font-header {
+  font-family: "avenir next bold";
+  font-size: 24px;
+  line-height: 32px;
+
+  @include tablet-view() {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@mixin font-header2 {
+  font-family: "avenir next bold";
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin font-subheader {
+  font-family: "avenir next demi bold";
+  font-size: 14px;
+  line-height: 22px;
+
+  @include tablet-view() {
+      font-size: 16px;
+      line-height: 24px;
+  }
+}
+
+@mixin font-paragraph {
+  font-family: "avenir next";
+  font-size: 13px;
+  line-height: 18px;
+
+  @include tablet-view() {
+      font-size: 14px;
+      line-height: 22px;
+  }
+}
+
+@mixin font-list-contact{
+  font-family: "avenir next";
+  font-size: 13px;
+  line-height: 18px;
+
+  @include tablet-view() {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin font-label {
+  font-family: "avenir next";
+  font-size: 12px;
+  line-height: 20px;
+  color: $silver;
+}

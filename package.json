@@ -1,0 +1,23 @@
+{
+  "name": "jasontszlik-huang-capstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayTLH/jasontszlik-huang-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayTLH/jasontszlik-huang-capstone/issues"
+  },
+  "homepage": "https://github.com/JayTLH/jasontszlik-huang-capstone#readme"
+}
