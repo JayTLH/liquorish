@@ -1,11 +1,11 @@
 // packages
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
 
-// styles
+// styles & assets
 import './NavMenu.scss';
-import './'
+import logo from '../../styles/assets/logos/logo.png';
 
 export default class NavMenu extends Component {
   render() {
@@ -13,16 +13,16 @@ export default class NavMenu extends Component {
       <div className="nav">
         <Menu right>
           <button className="nav__logo">
-            <Link to="/">LOGO/home</Link>
+            <Link to="/"><img className="nav__logo-img" src={logo} alt="barkeep logo"/></Link>
           </button>
           <button className="nav__button">
-            <Link to="/catalog">CATALOG</Link>
+            <Link to="/catalog"><p className="nav__link">CATALOG</p></Link>
           </button>
           <button className="nav__button">
-            <Link to="/">CALCULATOR</Link>
+            <Link to="/"><p className="nav__link">CALCULATOR</p></Link>
           </button>
           <button className="nav__button">
-            <Link to="/">UPLOAD</Link>
+            <Link to="/"><p className="nav__link">UPLOAD</p></Link>
           </button>
         </Menu>
       </div>

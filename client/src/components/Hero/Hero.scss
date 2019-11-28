@@ -1,5 +1,6 @@
 .hero {
   background: rgba(#000000, 0.8);
+  // background: radial-gradient(rgba(#FFFFFF, 0.1), rgba(#FFFFFF, 0.4));
   display: flex;
   flex-direction: column;
 
@@ -18,27 +19,18 @@
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
     position: absolute;
     top: 20vh;
-    align-self: center;
   }
 
   &__logo {
     margin: 0 0 70px 0;
-    animation: fadein 4s;
   }
 
   &__discover {
+    width: 300px;
     margin: auto 0 0 0;
-    animation: fadein 4s;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

@@ -20,10 +20,12 @@ export default class DisplayDrinks extends Component {
   }
 
   getRandomDrinks = () => {
+    const dataClone = this.props.data.slice()
     const random = []
     for (let i = 0; i < 8; i++) {
-      let ranNum = Math.floor(Math.random() * Math.floor(this.props.data.length) + 1)
-      random.push(this.props.data[ranNum])
+      let ranNum = Math.floor(Math.random() * Math.floor(dataClone.length))
+      random.push(dataClone[ranNum])
+      dataClone.splice(ranNum, 1)
     }
     return random
   }
@@ -41,13 +43,12 @@ export default class DisplayDrinks extends Component {
 
     return (
       <div className="display-drinks">
-        <div className="display-drinks__buttons">
-          <button className="display-drinks__button" value="pop" onClick={this.toggleCarousel}>Popular</button>
-          <button className="display-drinks__button" value="ran" onClick={this.toggleCarousel}>Discover</button>
+        <div className="display-drinks__button-container">
+          <button className="display-drinks__button" value="pop" onClick={this.toggleCarousel}>POPULAR</button>
+          <button className="display-drinks__button" value="ran" onClick={this.toggleCarousel}>DISCOVER</button>
         </div>
 
         <div className="display-drinks__carousel">
-          {/* render popular drinks */}
           {this.state.carousel === "pop" ? popDrinks.map(index => {
             return (
               <div className="display-drinks__card" key={index.strDrink}>

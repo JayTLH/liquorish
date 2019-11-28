@@ -2,24 +2,32 @@
   &__logo {
     font-family: inherit;
     font-size: 24px;
-    background: white;
+    background: none;
     border: none;
     margin: 0 0 20px 0;
     outline: none;
     text-decoration: none;
   }
 
+  &__logo-img {
+    width: 215px;
+  }
+
   &__button {
     font-family: inherit;
     font-size: 24px;
-    background: white;
+    background: none;
     border: none;
     outline: none;
-    text-decoration: none;
 
     &:hover {
       background: blue;
     }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
   }
 }
 
