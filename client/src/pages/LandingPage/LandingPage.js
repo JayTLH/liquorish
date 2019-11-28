@@ -1,20 +1,41 @@
 // packages
 import React, { Component } from 'react'
+import Axios from 'axios'
 
 // styles & assets
 import './LandingPage.scss'
-import hero from '../../styles/assets/images/adam-wilson-6UIonphZA5o-unsplash.jpg'
 
 // components
-import Navbar from '../../components/Navbar';
+import Hero from '../../components/Hero'
+import DisplayDrinks from '../../components/DisplayDrinks'
+import Footer from '../../components/Footer'
 
 export default class Landing extends Component {
+  // getting api data
+  getApi = () => {
+    Axios.get("http://localhost:8080/drinks")
+      .then(res => {
+        this.setState({
+          data: res.data
+        })
+      })
+  }
+
+  componentDidMount() {
+    this.getApi()
+  }
+
   render() {
-    return (
-      <div className="landing">
-        <Navbar />
-        <img className="landing__hero" src={hero} alt="wine glasses laid upside down on a hanger"></img>
-      </div>
-    )
+    if (this.state) {
+      return (
+        <div className="landing">
+          <Hero data={this.state.data} />
+          <DisplayDrinks data={this.state.data} />
+          <Footer />
+        </div>
+      )
+    } else {
+      return <>Start the server</>
+    }
   }
 }

@@ -1,0 +1,84 @@
+.nav {
+  &__logo {
+    font-family: inherit;
+    font-size: 24px;
+    background: white;
+    border: none;
+    margin: 0 0 20px 0;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &__button {
+    font-family: inherit;
+    font-size: 24px;
+    background: white;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+      background: blue;
+    }
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 60px;
+  top: 50px;
+}
+
+.bm-burger-bars {
+  background: white;
+}
+
+.bm-burger-bars-hover {
+  background: #bdc3c7;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  height: 100%;
+  position: fixed;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

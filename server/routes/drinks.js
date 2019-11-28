@@ -2,7 +2,12 @@
 const express = require('express')
 const router = express.Router()
 
+// import data
+const data = require('../data/data')
+
 // setting endpoints
-router('/', (req, res) => {
-  res.status(200).send('Hi there')
+router.get('/', (req, res) => {
+  res.send(data)
 })
+
+module.exports = router
