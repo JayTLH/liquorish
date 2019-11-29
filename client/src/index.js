@@ -1,17 +1,17 @@
 // packages
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// styles
-import './index.scss'
+// styles & assets
+import './index.scss';
 
 // pages
-import Home from './pages/LandingPage'
-import Drink from './pages/DrinkPage'
+import Home from './pages/LandingPage';
+import Drink from './pages/DrinkPage';
 
 // components
-import NavMenu from './components/NavMenu'
+import NavMenu from './components/NavMenu';
 
 // render
 ReactDOM.render(

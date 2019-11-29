@@ -1,35 +1,68 @@
 .hero {
-  background: rgba(#000000, 0.8);
+  width: 100vw;
+  height: 100vh;
+  background: #EFF1F0;
   display: flex;
   flex-direction: column;
 
   &__img {
-    width: 100%;
+    width: 40vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.45;
-    filter: blur(1px);
+    position: absolute;
+    right: 0;
   }
 
-  &__container {
+  &__filter {
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to left, rgba(#EFF1F0, 0), rgba(#EFF1F0, 1));
+    z-index: 1;
+  }
+
+  &__text {
     height: 80vh;
-    padding: 0 0 40px 0;
-    font-size: 50px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
+    padding: 0 0 40px 180px;
+    font-size: 30px;
+    color: black;
     position: absolute;
     top: 20vh;
   }
 
-  &__logo {
-    margin: 0 0 70px 0;
+  &__slogan {
+    &--orange {
+      color: #ff7300;
+    }
   }
 
-  &__discover {
+  &__button-container {
     width: 300px;
-    margin: auto 0 0 0;
+    position: absolute;
+    left: calc(180vw / 15.36);
+    bottom: calc(130vw / 15.36);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    font-family: inherit;
+    font-weight: 600;
+    width: 110px;
+    height: 40px;
+    background: black;
+    border: none;
+    border-radius: 15px;
+    color: #EFF1F0;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+    }
   }
 }

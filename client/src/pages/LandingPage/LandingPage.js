@@ -7,8 +7,6 @@ import './LandingPage.scss';
 
 // components
 import Hero from '../../components/Hero';
-import DisplayDrinks from '../../components/DisplayDrinks';
-import Footer from '../../components/Footer';
 
 export default class Landing extends Component {
   // getting api data
@@ -30,8 +28,6 @@ export default class Landing extends Component {
       return (
         <div className="landing">
           <Hero data={this.state.data} />
-          <DisplayDrinks data={this.state.data} />
-          <Footer />
         </div>
       )
     } else {
