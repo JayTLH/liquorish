@@ -47,7 +47,7 @@ export default class DisplayDrinks extends Component {
         {/* toggles drinks display */}
         <div className="display-drinks__button-container">
           <button className="display-drinks__button" value="pop" onClick={this.toggleDisplay}>POPULAR</button>
-          <button className="display-drinks__button" value="ran" onClick={this.toggleDisplay}>DISCOVER</button>
+          <button className="display-drinks__button" value="ran" onClick={this.toggleDisplay}>RANDOM</button>
         </div>
 
         <div className="display-drinks__display">

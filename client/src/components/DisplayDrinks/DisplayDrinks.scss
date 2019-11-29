@@ -15,16 +15,17 @@
 
   &__button {
     height: 30px;
+    padding: 0 10px;
     font-family: inherit;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     border: none;
     border-radius: 15px;
     outline: none;
-    background: none;
+    background: linear-gradient(#4e4e4e, #797979, #a3a3a3);
 
     &:hover {
-      background: linear-gradient(#4e4e4e, #797979, #a3a3a3);
+      background: linear-gradient(#a3a3a3, #797979, #4e4e4e);
     }
   }
 

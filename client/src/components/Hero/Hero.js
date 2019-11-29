@@ -1,14 +1,19 @@
 // packages
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Autosuggest from 'react-autosuggest';
 
 // styles & assets
 import './Hero.scss'
-import hero from '../../styles/assets/images/hero-img.jpg'
-import logo from '../../styles/assets/logos/logo.png'
-import discover from '../../styles/assets/logos/discover.png'
+import logo from '../../styles/assets/logos/logo.png';
+import discover from '../../styles/assets/logos/discover.png';
+// import hero1 from '../../styles/assets/images/h1.jpg'
+import hero2 from '../../styles/assets/images/h2.jpg';
+import hero3 from '../../styles/assets/images/h3.jpg';
 
-const drinks = []
+// randomize hero image
+const drinks = [];
+const heroImgs = [hero2, hero3];
+let ranNum = Math.floor(Math.random() * Math.floor(heroImgs.length))
 
 export default class Hero extends Component {
   state = {
@@ -77,7 +82,7 @@ export default class Hero extends Component {
 
     return (
       <div className="hero">
-        <img className="hero__img" src={hero} alt="wine glasses laid upside down on a hanger"></img>
+        <img className="hero__img" src={heroImgs[ranNum]} alt="wine glasses laid upside down on a hanger"></img>
         <div className="hero__container">
           <img className="hero__logo" src={logo} alt="a"></img>
           {/* search feature */}

@@ -1,14 +1,14 @@
 // packages
-import React, { Component } from 'react'
-import Axios from 'axios'
+import React, { Component } from 'react';
+import Axios from 'axios';
 
 // styles & assets
-import './LandingPage.scss'
+import './LandingPage.scss';
 
 // components
-import Hero from '../../components/Hero'
-import DisplayDrinks from '../../components/DisplayDrinks'
-import Footer from '../../components/Footer'
+import Hero from '../../components/Hero';
+import DisplayDrinks from '../../components/DisplayDrinks';
+import Footer from '../../components/Footer';
 
 export default class Landing extends Component {
   // getting api data
