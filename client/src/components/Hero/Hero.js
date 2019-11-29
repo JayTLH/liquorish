@@ -1,10 +1,13 @@
 // packages
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 // styles & assets
-import './Hero.scss'
-import discover from '../../styles/assets/logos/discover-bl.png';
+import './Hero.scss';
 import hero from '../../styles/assets/images/img3.jpg';
+
+// components
+import DisplayDrinks from '../DisplayDrinks';
 
 // const drinks = [];
 
@@ -34,28 +37,25 @@ export default class Hero extends Component {
 
         {this.state.display === "default" ?
           <div className="hero__text">
-            <h2 className="hero__msg">Welcome</h2>
+            <h2 className="hero__msg">Welcome!</h2>
             <h6 className="hero__slogan"><span className="hero__slogan--orange">Let's</span> get you started on your journey to<br />become a Cock<span className="hero__slogan--orange">Tail</span> Connoisseur</h6>
+            <h6 className="hero__slogan">Search</h6>
+            <input className="hero__search" input="text"></input>
+            <h6 className="hero__slogan">Discover our drinks!</h6>
           </div>
           : null}
 
         {this.state.display === "popular" ?
-          <div className="hero__text">
-            <h2 className="hero__msg">Popular</h2>
-            <h6 className="hero__slogan">Let's get you started on your journey to<br />become a CockTail Connoisseur</h6>
-          </div>
+          <DisplayDrinks data={this.props.data} display={this.state.display} />
           : null}
 
         {this.state.display === "random" ?
-          <div className="hero__text">
-            <h2 className="hero__msg">Random</h2>
-            <h6 className="hero__slogan">Let's get you started on your journey to<br />become a CockTail Connoisseur</h6>
-          </div>
+          <DisplayDrinks data={this.props.data} display={this.state.display} />
           : null}
 
         <div className="hero__button-container">
-          <button className="hero__button" value="popular" onClick={this.toggleDisplay}>POPULAR</button>
-          <button className="hero__button" value="random" onClick={this.toggleDisplay}>RANDOM</button>
+          <motion.button className="hero__button" value="popular" onClick={this.toggleDisplay} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.99 }}>POPULAR</motion.button>
+          <motion.button className="hero__button" value="random" onClick={this.toggleDisplay} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.99 }}>RANDOM</motion.button>
         </div>
       </div>
     )

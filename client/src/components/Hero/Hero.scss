@@ -25,16 +25,35 @@
 
   &__text {
     height: 80vh;
-    padding: 0 0 40px 180px;
+    padding: 0 0 0 180px;
     font-size: 30px;
     color: black;
     position: absolute;
     top: 20vh;
   }
 
+  &__msg {
+    margin: 38px 0 50px 0;
+  }
+
   &__slogan {
+    margin: 0;
+
     &--orange {
       color: #ff7300;
+    }
+  }
+
+  &__search {
+    width: 600px;
+    height: 40px;
+    padding: 0 0 0 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    outline: none;
+
+    &:focus {
+      border-color: #ff7300;
     }
   }
 
@@ -57,12 +76,5 @@
     border-radius: 15px;
     color: #EFF1F0;
     outline: none;
-    opacity: 1;
-    transition: opacity 0.5s;
-
-    &:hover {
-      opacity: 0.5;
-      transition: opacity 0.5s;
-    }
   }
 }

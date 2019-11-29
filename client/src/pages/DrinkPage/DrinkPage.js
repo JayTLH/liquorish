@@ -1,7 +1,6 @@
 // packages
 import React, { Component } from 'react';
 import Axios from 'axios';
-import { useSpring } from 'react-spring';
 
 // styles & assets
 import './DrinkPage.scss';

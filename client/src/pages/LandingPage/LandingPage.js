@@ -31,7 +31,7 @@ export default class Landing extends Component {
         </div>
       )
     } else {
-      return <>Start the server</>
+      return <p style={{color: "white"}}>start the server</p>
     }
   }
 }

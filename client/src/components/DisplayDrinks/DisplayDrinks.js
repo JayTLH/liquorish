@@ -5,11 +5,8 @@ import { Link } from 'react-router-dom';
 // styles
 import './DisplayDrinks.scss';
 
+// displays a list of drinks depending on the button clicked in the hero component
 export default class DisplayDrinks extends Component {
-  state = {
-    display: null
-  }
-
   getPopularDrinks = () => {
     const popular = []
     this.props.data.forEach(index => {
@@ -31,51 +28,36 @@ export default class DisplayDrinks extends Component {
     return random
   }
 
-  // carousel controls
-  toggleDisplay = (e) => {
-    this.setState({
-      display: e.target.value
-    })
-  }
-
   render() {
     let popDrinks = this.getPopularDrinks()
     let ranDrinks = this.getRandomDrinks()
 
     return (
       <div className="display-drinks">
-        {/* toggles drinks display */}
-        <div className="display-drinks__button-container">
-          <button className="display-drinks__button" value="pop" onClick={this.toggleDisplay}>POPULAR</button>
-          <button className="display-drinks__button" value="ran" onClick={this.toggleDisplay}>RANDOM</button>
-        </div>
+        <div className="display-drinks__filter"></div>
+        {/* renders popular drinks when the popular button is clicked */}
+        {this.props.display === "popular" ? popDrinks.map(index => {
+          return (
+            <Link to={index.strDrink} key={index.strDrink}>
+              <div className="display-drinks__card">
+                <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
+                <p className="display-drinks__name">{index.strDrink}</p>
+              </div>
+            </Link>
+          )
+        }) : null}
 
-        <div className="display-drinks__display">
-          {/* renders popular drinks when the popular button is clicked */}
-          {this.state.display === "pop" ? popDrinks.map(index => {
-            return (
-              <Link to={index.strDrink} key={index.strDrink}>
-                <div className="display-drinks__card">
-                  <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
-                  <p className="display-drinks__name">{index.strDrink}</p>
-                </div>
-              </Link>
-            )
-          }) : null}
-
-          {/* render random drinks when the discover button is clicked */}
-          {this.state.display === "ran" ? ranDrinks.map(index => {
-            return (
-              <Link to={index.strDrink} key={index.strDrink}>
-                <div className="display-drinks__card">
-                  <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
-                  <p className="display-drinks__name">{index.strDrink}</p>
-                </div>
-              </Link>
-            )
-          }) : null}
-        </div>
-
+        {/* render random drinks when the discover button is clicked */}
+        {this.props.display === "random" ? ranDrinks.map(index => {
+          return (
+            <Link to={index.strDrink} key={index.strDrink}>
+              <div className="display-drinks__card">
+                <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
+                <p className="display-drinks__name">{index.strDrink}</p>
+              </div>
+            </Link>
+          )
+        }) : null}
       </div>
     )
   }
