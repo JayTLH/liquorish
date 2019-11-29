@@ -1,6 +1,6 @@
 .display-drinks {
-  height: 480px;
-  padding: 35px 18px 0 18px;
+  height: calc(475vw / 15.36);
+  padding: 30px 0 0 0;
   background: radial-gradient(#f1f1f1, #cecece, #a3a3a3, #797979, #4e4e4e);
   display: flex;
   flex-direction: column;
@@ -8,47 +8,56 @@
 
   &__button-container {
     width: 30vw;
+    margin: 0 0 30px 0;
     display: flex;
     justify-content: space-between;
   }
 
   &__button {
+    height: 30px;
     font-family: inherit;
     font-size: 24px;
     color: white;
-    background: none;
     border: none;
+    border-radius: 15px;
+    outline: none;
+    background: none;
+
+    &:hover {
+      background: linear-gradient(#4e4e4e, #797979, #a3a3a3);
+    }
   }
 
-  &__carousel {
-    width: 100%;
+  &__display {
     display: flex;
+    justify-content: center;
   }
 
   &__card {
-    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadein 4s;
+    position: relative;
+    animation: fadein 2s;
   }
 
   &__img {
     width: calc(150vw / 15.36);
-    height: calc(350vw / 15.36);
-    // border: solid 2px #888888;
-    // border-radius: 20px;
+    height: calc(385vw / 15.36);
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.9;
+    transition: opacity 1s;
 
     &:hover {
-      opacity: 1;
+      opacity: 0.5;
       transition: opacity 1s;
     }
   }
 
   &__name {
     color: white;
+    position: absolute;
+    bottom: 0;
   }
 }
 

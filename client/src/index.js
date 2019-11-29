@@ -8,12 +8,17 @@ import './index.scss'
 
 // pages
 import Home from './pages/LandingPage'
+import Drink from './pages/DrinkPage'
+
+// components
+import NavMenu from './components/NavMenu'
 
 // render
 ReactDOM.render(
   <BrowserRouter>
+    <NavMenu />
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/catalog" exact component={Home} />
+      <Route path="/:drinkName" exact component={Drink} />
     </Switch>
   </BrowserRouter>, document.getElementById('root'));

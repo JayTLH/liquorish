@@ -8,9 +8,6 @@ import hero from '../../styles/assets/images/hero-img.jpg'
 import logo from '../../styles/assets/logos/logo.png'
 import discover from '../../styles/assets/logos/discover.png'
 
-// components
-import NavMenu from '../NavMenu'
-
 const drinks = []
 
 export default class Hero extends Component {
@@ -80,9 +77,6 @@ export default class Hero extends Component {
 
     return (
       <div className="hero">
-
-        <NavMenu />
-
         <img className="hero__img" src={hero} alt="wine glasses laid upside down on a hanger"></img>
         <div className="hero__container">
           <img className="hero__logo" src={logo} alt="a"></img>

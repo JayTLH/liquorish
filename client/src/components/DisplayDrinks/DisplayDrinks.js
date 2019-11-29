@@ -1,12 +1,13 @@
 // packages
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // styles
 import './DisplayDrinks.scss';
 
 export default class DisplayDrinks extends Component {
   state = {
-    carousel: null
+    display: null
   }
 
   getPopularDrinks = () => {
@@ -31,9 +32,9 @@ export default class DisplayDrinks extends Component {
   }
 
   // carousel controls
-  toggleCarousel = (e) => {
+  toggleDisplay = (e) => {
     this.setState({
-      carousel: e.target.value
+      display: e.target.value
     })
   }
 
@@ -43,28 +44,34 @@ export default class DisplayDrinks extends Component {
 
     return (
       <div className="display-drinks">
+        {/* toggles drinks display */}
         <div className="display-drinks__button-container">
-          <button className="display-drinks__button" value="pop" onClick={this.toggleCarousel}>POPULAR</button>
-          <button className="display-drinks__button" value="ran" onClick={this.toggleCarousel}>DISCOVER</button>
+          <button className="display-drinks__button" value="pop" onClick={this.toggleDisplay}>POPULAR</button>
+          <button className="display-drinks__button" value="ran" onClick={this.toggleDisplay}>DISCOVER</button>
         </div>
 
-        <div className="display-drinks__carousel">
-          {this.state.carousel === "pop" ? popDrinks.map(index => {
+        <div className="display-drinks__display">
+          {/* renders popular drinks when the popular button is clicked */}
+          {this.state.display === "pop" ? popDrinks.map(index => {
             return (
-              <div className="display-drinks__card" key={index.strDrink}>
-                <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
-                <h4 className="display-drinks__name">{index.strDrink}</h4>
-              </div>
+              <Link to={index.strDrink} key={index.strDrink}>
+                <div className="display-drinks__card">
+                  <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
+                  <p className="display-drinks__name">{index.strDrink}</p>
+                </div>
+              </Link>
             )
           }) : null}
 
-          {/* render random drinks */}
-          {this.state.carousel === "ran" ? ranDrinks.map(index => {
+          {/* render random drinks when the discover button is clicked */}
+          {this.state.display === "ran" ? ranDrinks.map(index => {
             return (
-              <div className="display-drinks__card" key={index.strDrink}>
-                <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
-                <h4 className="display-drinks__name">{index.strDrink}</h4>
-              </div>
+              <Link to={index.strDrink} key={index.strDrink}>
+                <div className="display-drinks__card">
+                  <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
+                  <p className="display-drinks__name">{index.strDrink}</p>
+                </div>
+              </Link>
             )
           }) : null}
         </div>
