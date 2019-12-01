@@ -1,5 +1,6 @@
 // packages
 import React, { Component } from "react";
+// import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 
@@ -13,14 +14,20 @@ import iconSearch from "../../styles/assets/icons/icon-search.svg";
 import Search from "../Search";
 
 export default class NavMenu extends Component {
+  redirect = e => {
+    e.preventDefault();
+    this.props.history.push(`/${e.target.search.value}`);
+  };
+
   render() {
+    console.log(this.props)
     return (
       <div className="nav">
         <Link to="/">
           <img className="nav__logo-left" src={logobl} alt="barkeep logo" />
         </Link>
 
-        <form className="nav__search">
+        <form className="nav__search" onSubmit={this.redirect}>
           <button className="nav__search-button">
             <img
               className="nav__search-icon"
@@ -28,12 +35,13 @@ export default class NavMenu extends Component {
               alt="search button"
             />
           </button>
-          <Search data={this.props.data}/>
+          <Search data={this.props.data} />
         </form>
-        
+
         <Menu right>
           <button className="nav__logo">
             <Link to="/">
+              {/* change to profile icon */}
               <img className="nav__logo-img" src={logo} alt="barkeep logo" />
             </Link>
           </button>

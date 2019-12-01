@@ -28,7 +28,7 @@ export default class Landing extends Component {
     if (this.state) {
       return (
         <div className="landing">
-          <NavMenu data={this.state.data} />
+          <NavMenu data={this.state.data} {...this.props} />
           <Hero data={this.state.data} />
         </div>
       )

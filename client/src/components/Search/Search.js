@@ -56,6 +56,7 @@ export default class Search extends Component {
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
+      name: "search",
       placeholder: "Search for a Drink",
       value,
       onChange: this.onChange

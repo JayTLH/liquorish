@@ -6706,41 +6706,6 @@ const data = [
     ]
   },
   {
-    idDrink: "11002",
-    strDrink: "Long Island Tea",
-    strCategory: "Ordinary Drink",
-    strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
-    strInstructions:
-      "Combine all ingredients (except cola) and pour over ice in a highball glass. Add the splash of cola for color. Decorate with a slice of lemon and serve.",
-    strDrinkThumb:
-      "https://www.thecocktaildb.com/images/media/drink/ywxwqs1439906072.jpg",
-    ingredients: [
-      "Vodka",
-      "Light rum",
-      "Gin",
-      "Tequila",
-      "Lemon",
-      "Coca-Cola",
-      null,
-      null,
-      null,
-      null
-    ],
-    measurements: [
-      "1/2 oz ",
-      "1/2 oz ",
-      "1/2 oz ",
-      "1/2 oz ",
-      "Juice of 1/2 ",
-      "1 splash ",
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
     idDrink: "11666",
     strDrink: "Lone Tree Cooler",
     strCategory: "Ordinary Drink",
