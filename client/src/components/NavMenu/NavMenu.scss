@@ -25,14 +25,6 @@
     border: none;
   }
 
-  &__search-input {
-    width: 250px;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: inherit;
-  }
-
   &__logo {
     background: none;
     border: none;
@@ -62,6 +54,7 @@
   }
 }
 
+// react-burger-menu
 .bm-burger-button {
   position: fixed;
   width: 36px;

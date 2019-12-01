@@ -6,6 +6,7 @@ import Axios from 'axios';
 import './LandingPage.scss';
 
 // components
+import NavMenu from '../../components/NavMenu';
 import Hero from '../../components/Hero';
 
 export default class Landing extends Component {
@@ -27,11 +28,12 @@ export default class Landing extends Component {
     if (this.state) {
       return (
         <div className="landing">
+          <NavMenu data={this.state.data} />
           <Hero data={this.state.data} />
         </div>
       )
     } else {
-      return <p style={{color: "white"}}>start the server</p>
+      return <p style={{ color: "white" }}>start the server</p>
     }
   }
 }
