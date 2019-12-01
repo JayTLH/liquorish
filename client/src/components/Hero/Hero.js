@@ -39,8 +39,6 @@ export default class Hero extends Component {
           <div className="hero__text">
             <h2 className="hero__msg">Welcome!</h2>
             <h6 className="hero__slogan"><span className="hero__slogan--orange">Let's</span> get you started on your journey to<br />become a Cock<span className="hero__slogan--orange">Tail</span> Connoisseur</h6>
-            <h6 className="hero__slogan">Search</h6>
-            <input className="hero__search" input="text"></input>
             <h6 className="hero__slogan">Discover our drinks!</h6>
           </div>
           : null}

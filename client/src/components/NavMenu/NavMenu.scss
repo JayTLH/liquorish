@@ -8,6 +8,31 @@
     z-index: 1;
   }
 
+  &__search {
+    z-index: 1;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    border-bottom: solid 1px #000000;
+    display: flex;
+  }
+
+  &__search-button {
+    background: none;
+    border: none;
+  }
+
+  &__search-input {
+    width: 250px;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+
   &__logo {
     background: none;
     border: none;

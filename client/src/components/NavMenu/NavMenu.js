@@ -7,15 +7,20 @@ import { slide as Menu } from 'react-burger-menu';
 import './NavMenu.scss';
 import logo from '../../styles/assets/logos/logo.png';
 import logobl from '../../styles/assets/logos/logo-bl.png';
+import iconSearch from '../../styles/assets/icons/icon-search.svg';
 
 export default class NavMenu extends Component {
   render() {
     return (
       <div className="nav">
         <Link to="/"><img className="nav__logo-left" src={logobl} alt="barkeep logo" /></Link>
+        <form className="nav__search">
+          <button className="nav__search-button"><img className="nav__search-icon" src={iconSearch} alt="search button" /></button>
+          <input className="nav__search-input" type="text" />
+        </form>
         <Menu right>
           <button className="nav__logo">
-            <Link to="/"><img className="nav__logo-img" src={logo} alt="barkeep logo"/></Link>
+            <Link to="/"><img className="nav__logo-img" src={logo} alt="barkeep logo" /></Link>
           </button>
           <button className="nav__button">
             <Link to="/catalog"><p className="nav__link">CATALOG</p></Link>
