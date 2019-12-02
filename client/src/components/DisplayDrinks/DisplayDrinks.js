@@ -10,7 +10,7 @@ export default class DisplayDrinks extends Component {
   getPopularDrinks = () => {
     const popular = []
     this.props.data.forEach(index => {
-      if (index.strDrink === "Mojito" || index.strDrink === "Old Fashioned" || index.strDrink === "Long Island Tea" || index.strDrink === "Negroni" || index.strDrink === "Whiskey Sour" || index.strDrink === "Daiquiri" || index.strDrink === "Margarita" || index.strDrink === "Manhattan") {
+      if (index.strDrink === "Mojito" || index.strDrink === "Old Fashioned" || index.strDrink === "Long Island Iced Tea" || index.strDrink === "Negroni" || index.strDrink === "Whiskey Sour" || index.strDrink === "Daiquiri" || index.strDrink === "Margarita" || index.strDrink === "Manhattan") {
         popular.push(index)
       }
     })

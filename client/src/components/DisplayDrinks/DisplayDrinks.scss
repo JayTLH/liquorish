@@ -24,6 +24,8 @@
   }
 
   &__name {
+    width: calc(110vw / 15.36);
+    text-align: center;
     font-weight: 600;
     color: #FFFFFF;
     position: absolute;

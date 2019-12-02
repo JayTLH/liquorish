@@ -42,7 +42,12 @@
     &--orange {
       color: #ff7300;
     }
+
+    &--bottom {
+      margin: 80px 0 0 0;
+    }
   }
+
 
   &__search {
     width: 600px;
@@ -60,8 +65,8 @@
   &__button-container {
     width: 300px;
     position: absolute;
-    left: calc(180vw / 15.36);
-    bottom: calc(130vw / 15.36);
+    left: 180px;
+    bottom: 130px;
     display: flex;
     justify-content: space-between;
   }
@@ -76,5 +81,6 @@
     border-radius: 15px;
     color: #EFF1F0;
     outline: none;
+    cursor: pointer;
   }
 }

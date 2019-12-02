@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 
 // styles & assets
-import './LandingPage.scss';
+import './Landing.scss';
 
 // components
 import NavMenu from '../../components/NavMenu';
