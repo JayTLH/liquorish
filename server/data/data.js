@@ -4,7 +4,7 @@ const data = [
     strDrink: "A1",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass.",
     strDrinkThumb:
@@ -22,7 +22,7 @@ const data = [
       null
     ],
     measurements: [
-      "1 3/4 shot ",
+      "1 3/4 Shot ",
       "1 Shot ",
       "1/4 Shot",
       "1/8 Shot",
@@ -39,13 +39,13 @@ const data = [
     strDrink: "ABC",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
+    strGlass: "Shot Glass",
     strInstructions: "Layered in a shot glass.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg",
     ingredients: [
       "Amaretto",
-      "Baileys irish cream",
+      "Baileys Irish Cream",
       "Cognac",
       null,
       null,
@@ -81,7 +81,7 @@ const data = [
     ingredients: [
       "Gin",
       "Grenadine",
-      "Heavy cream",
+      "Heavy Cream",
       "Milk",
       "Egg White",
       null,
@@ -91,10 +91,10 @@ const data = [
       null
     ],
     measurements: [
-      "2 shots ",
-      "1/2 shot ",
-      "1/2 shot ",
-      "1/2 shot",
+      "2 Shots ",
+      "1/2 Shot ",
+      "1/2 Shot ",
+      "1/2 Shot",
       "1/2 Fresh",
       null,
       null,
@@ -108,14 +108,14 @@ const data = [
     strDrink: "Adam",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rwuxsv1472812169.jpg",
     ingredients: [
-      "Dark rum",
-      "Lemon juice",
+      "Dark Rum",
+      "Lemon Juice",
       "Grenadine",
       null,
       null,
@@ -126,9 +126,9 @@ const data = [
       null
     ],
     measurements: [
-      "2 oz ",
-      "1 oz ",
-      "1 tsp ",
+      "2 oz",
+      "1 oz",
+      "1 tsp",
       null,
       null,
       null,
@@ -148,9 +148,9 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg",
     ingredients: [
-      "Absolut Vodka",
+      "Vodka",
       "Gin",
-      "Tonic water",
+      "Tonic Water",
       null,
       null,
       null,
@@ -160,44 +160,9 @@ const data = [
       null
     ],
     measurements: [
-      "1 oz ",
-      "1 oz ",
-      "4 oz ",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    idDrink: "14610",
-    strDrink: "ACID",
-    strCategory: "Shot",
-    strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
-    strInstructions:
-      "Poor in the 151 first followed by the 101 served with a Coke or Dr Pepper chaser.",
-    strDrinkThumb:
-      "https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg",
-    ingredients: [
-      "151 proof rum",
-      "Wild Turkey",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    measurements: [
-      "1 oz Bacardi ",
-      "1 oz ",
-      null,
+      "1 oz",
+      "1 oz",
+      "4 oz",
       null,
       null,
       null,
@@ -212,14 +177,14 @@ const data = [
     strDrink: "A. J.",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake ingredients with ice, strain into a cocktail glass, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/uryyrr1472811418.jpg",
     ingredients: [
       "Applejack",
-      "Grapefruit juice",
+      "Grapefruit Juice",
       null,
       null,
       null,
@@ -230,8 +195,8 @@ const data = [
       null
     ],
     measurements: [
-      "1 1/2 oz ",
-      "1 oz ",
+      "1 1/2 oz",
+      "1 oz",
       null,
       null,
       null,
@@ -247,16 +212,16 @@ const data = [
     strDrink: "Affair",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Pour schnapps, orange juice, and cranberry juice over ice in a highball glass. Top with club soda and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/wxrsxx1472720734.jpg",
     ingredients: [
-      "Strawberry schnapps",
-      "Orange juice",
-      "Cranberry juice",
-      "Club soda",
+      "Peach Schnapps",
+      "Orange Juice",
+      "Cranberry Juice",
+      "Club Soda",
       null,
       null,
       null,
@@ -265,9 +230,9 @@ const data = [
       null
     ],
     measurements: [
-      "2 oz ",
-      "2 oz ",
-      "2 oz ",
+      "2 oz",
+      "2 oz",
+      "2 oz",
       null,
       null,
       null,
@@ -282,14 +247,14 @@ const data = [
     strDrink: "Avalon",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Fill a tall glass with ice. Layer the Finlandia Vodka, lemon and apple juices, Pisang Ambon, and top up with lemonade. Stir slightly and garnish with a spiralled cucumber skin and a red cherry. The cucumber provides zest and looks attractive. This drink, created by Timo Haimi, took first prize in the 1991 Finlandia Vodka Long Drink Competition.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/3k9qic1493068931.jpg",
     ingredients: [
       "Vodka",
-      "Pisang Ambon",
+      "Banana Liquor",
       "Apple juice",
       "Lemon juice",
       "Lemonade",
@@ -301,9 +266,9 @@ const data = [
     ],
     measurements: [
       "3 parts",
-      "1 part ",
-      "6 parts ",
-      "1 1/2 part ",
+      "1 part",
+      "6 parts",
+      "1 1/2 parts",
       null,
       null,
       null,
@@ -317,15 +282,15 @@ const data = [
     strDrink: "Abilene",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Pour all of the ingredients into a highball glass almost filled with ice cubes. Stir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/ysqwwt1461919465.jpg",
     ingredients: [
-      "Dark rum",
-      "Peach nectar",
-      "Orange juice",
+      "Dark Rum",
+      "Peach Nectar",
+      "Orange Juice",
       null,
       null,
       null,
@@ -335,9 +300,9 @@ const data = [
       null
     ],
     measurements: [
-      "1 1/2 oz ",
-      "2 oz ",
-      "3 oz ",
+      "1 1/2 oz",
+      "2 oz",
+      "3 oz",
       null,
       null,
       null,
@@ -352,15 +317,15 @@ const data = [
     strDrink: "Almeria",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg",
     ingredients: [
-      "Dark rum",
+      "Dark Rum",
       "Kahlua",
-      "Egg white",
+      "Egg White",
       null,
       null,
       null,
@@ -370,9 +335,9 @@ const data = [
       null
     ],
     measurements: [
-      "2 oz ",
-      "1 oz ",
-      "1 ",
+      "2 oz",
+      "1 oz",
+      "1",
       null,
       null,
       null,
@@ -394,7 +359,7 @@ const data = [
       "https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg",
     ingredients: [
       "Gin",
-      "Vermouth",
+      "Sweet Vermouth",
       null,
       null,
       null,
@@ -405,8 +370,8 @@ const data = [
       null
     ],
     measurements: [
-      "1 1/2 shot ",
-      "1 1/2 shot ",
+      "1 1/2 shot",
+      "1 1/2 shot",
       null,
       null,
       null,
@@ -422,15 +387,15 @@ const data = [
     strDrink: "Acapulco",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned Glass",
     strInstructions:
-      "Combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes. Add the sprig of mint and serve.",
+      "Combine and shake all ingredients (except mint) with ice and strain into an Old-Fashioned glass over ice cubes. Add the sprig of mint and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/vtpsvr1472811976.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Triple sec",
-      "Lime juice",
+      "Lime Juice",
       "Sugar",
       "Egg white",
       "Mint",
@@ -440,12 +405,12 @@ const data = [
       null
     ],
     measurements: [
-      "1 1/2 oz ",
-      "1 1/2 tsp ",
-      "1 tblsp ",
-      "1 tsp ",
-      "1 ",
-      "1 ",
+      "1 1/2 oz",
+      "1 1/2 tsp",
+      "1 tblsp",
+      "1 tsp",
+      "1",
+      "1",
       null,
       null,
       null,
@@ -457,7 +422,7 @@ const data = [
     strDrink: "Affinity",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
     strDrinkThumb:
@@ -466,7 +431,7 @@ const data = [
       "Scotch",
       "Sweet Vermouth",
       "Dry Vermouth",
-      "Orange bitters",
+      "Orange Bitters",
       null,
       null,
       null,
@@ -475,10 +440,10 @@ const data = [
       null
     ],
     measurements: [
-      "1 1/2 oz ",
-      "1 oz ",
-      "1 oz ",
-      "2 dashes ",
+      "1 1/2 oz",
+      "1 oz",
+      "1 oz",
+      "2 dashes",
       null,
       null,
       null,
@@ -492,7 +457,7 @@ const data = [
     strDrink: "Applecar",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
     strDrinkThumb:
@@ -510,9 +475,9 @@ const data = [
       null
     ],
     measurements: [
-      "1 oz ",
-      "1 oz ",
-      "1 oz ",
+      "1 oz",
+      "1 oz",
+      "1 oz",
       null,
       null,
       null,
@@ -527,15 +492,15 @@ const data = [
     strDrink: "Aviation",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/ruutxt1478253328.jpg",
     ingredients: [
       "Gin",
-      "lemon juice",
-      "maraschino liqueur",
+      "Lemon Juice",
+      "Maraschino Liqueur",
       null,
       null,
       null,
@@ -545,9 +510,9 @@ const data = [
       null
     ],
     measurements: [
-      "4.5 cl",
-      "1.5 cl",
-      "1.5 cl",
+      "1 1/2 oz",
+      "1/2 oz",
+      "1/2 oz",
       null,
       null,
       null,
@@ -562,7 +527,7 @@ const data = [
     strDrink: "Alexander",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
     strDrinkThumb:
@@ -580,9 +545,9 @@ const data = [
       null
     ],
     measurements: [
-      "1/2 oz ",
-      "1/2 oz white ",
-      "2 oz ",
+      "1/2 oz",
+      "1/2 oz white",
+      "2 oz",
       null,
       null,
       null,
@@ -597,13 +562,13 @@ const data = [
     strDrink: "Algonquin",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg",
     ingredients: [
-      "Blended whiskey",
+      "Blended Whiskey",
       "Dry Vermouth",
       "Pineapple juice",
       null,
@@ -632,7 +597,7 @@ const data = [
     strDrink: "Allegheny",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass. Top with the twist of lemon peel and serve.",
     strDrinkThumb:
@@ -640,9 +605,9 @@ const data = [
     ingredients: [
       "Dry Vermouth",
       "Bourbon",
-      "Blackberry brandy",
-      "Lemon juice",
-      "Lemon peel",
+      "Brandy",
+      "Lemon Juice",
+      "Lemon Peel",
       null,
       null,
       null,
@@ -667,7 +632,7 @@ const data = [
     strDrink: "Artillery",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Stir all ingredients with ice, strain into a cocktail glass, and serve.",
     strDrinkThumb:
@@ -702,15 +667,15 @@ const data = [
     strDrink: "Autodafé",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Mix and fill up with soda water. Drunk by finns on a sunny day any time of the year and day.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/7dkf0i1487602928.jpg",
     ingredients: [
       "Vodka",
-      "Lime juice",
-      "Soda water",
+      "Lime Juice",
+      "Club Soda",
       null,
       null,
       null,
@@ -744,10 +709,10 @@ const data = [
       "https://www.thecocktaildb.com/images/media/drink/vyrurp1472667777.jpg",
     ingredients: [
       "Kahlua",
-      "Baileys irish cream",
+      "Baileys Irish Cream",
       "Frangelico",
       "Coffee",
-      "Cream",
+      "Light Cream",
       null,
       null,
       null,
@@ -772,7 +737,7 @@ const data = [
     strDrink: "After sex",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice. to make it beuty full make the top of the glass with a grenadine and sugar",
     strDrinkThumb:
@@ -842,13 +807,13 @@ const data = [
     strDrink: "B-52",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
+    strGlass: "Shot Glass",
     strInstructions:
       "Layer ingredients into a shot glass. Serve with a stirrer.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg",
     ingredients: [
-      "Baileys irish cream",
+      "Baileys Irish Cream",
       "Grand Marnier",
       "Kahlua",
       null,
@@ -877,8 +842,8 @@ const data = [
     strDrink: "Bijou",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
-    strInstructions: "Stir in mixing glass with ice and strain\r\n",
+    strGlass: "Cocktail Glass",
+    strInstructions: "Stir in mixing glass with ice and strain.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg",
     ingredients: [
@@ -911,7 +876,7 @@ const data = [
     strDrink: "Boxcar",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Whiskey sour glass",
+    strGlass: "Whiskey Sour Glass",
     strInstructions:
       "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a sour glass.",
     strDrinkThumb:
@@ -946,12 +911,12 @@ const data = [
     strDrink: "Big Red",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
+    strGlass: "Shot Glass",
     strInstructions: "Pour ingredients into 1 ounce shot glass",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/yqwuwu1441248116.jpg",
     ingredients: [
-      "Irish cream",
+      "Baileys Irish Cream",
       "Goldschlager",
       null,
       null,
@@ -987,7 +952,7 @@ const data = [
       "https://www.thecocktaildb.com/images/media/drink/eaag491504367543.jpg",
     ingredients: [
       "Champagne",
-      "Peach schnapps",
+      "Peach Schnapps",
       null,
       null,
       null,
@@ -1015,15 +980,15 @@ const data = [
     strDrink: "Bramble",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-Fashioned glass",
+    strGlass: "Old-Fashioned Glass",
     strInstructions:
       "Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/lvzl3r1504372526.jpg",
     ingredients: [
       "Gin",
-      "lemon juice",
-      "Sugar syrup",
+      "Lemon Juice",
+      "Sugar Syrup",
       "Creme de Mure",
       null,
       null,
@@ -1050,7 +1015,7 @@ const data = [
     strDrink: "Balmoral",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
     strDrinkThumb:
@@ -1085,7 +1050,7 @@ const data = [
     strDrink: "Bluebird",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a mixing glass half-filled with crushed ice, combine the gin, triple sec, Curacao, and bitters. Stir well. Strain into a cocktail glass and garnish with the lemon twist and the cherry.",
     strDrinkThumb:
@@ -1095,7 +1060,7 @@ const data = [
       "Triple sec",
       "Blue Curacao",
       "Bitters",
-      "Maraschino cherry",
+      "Maraschino Cherry",
       "Lemon peel",
       null,
       null,
@@ -1120,7 +1085,7 @@ const data = [
     strDrink: "Brooklyn",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Combine ingredients with ice and stir until well-chilled. Strain into a chilled cocktail glass.",
     strDrinkThumb:
@@ -1155,7 +1120,7 @@ const data = [
     strDrink: "Boomerang",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "In a mixing glass half-filled with ice cubes, combine the gin, vermouth, bitters, and maraschino liqueur. Stir well. Strain into a cocktail glass and garnish with the cherry.",
     strDrinkThumb:
@@ -1164,8 +1129,8 @@ const data = [
       "Gin",
       "Dry Vermouth",
       "Bitters",
-      "Maraschino liqueur",
-      "Maraschino cherry",
+      "Maraschino Liqueur",
+      "Maraschino Cherry",
       null,
       null,
       null,
@@ -1190,13 +1155,13 @@ const data = [
     strDrink: "Barracuda",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Margarita glass",
+    strGlass: "Margarita Glass",
     strInstructions:
       "Shake pour ingredients with ice. Strain into glass, top with Sparkling wine.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/jwmr1x1504372337.jpg",
     ingredients: [
-      "Rum",
+      "White Rum",
       "Galliano",
       "Pineapple Juice",
       "Lime Juice",
@@ -1225,7 +1190,7 @@ const data = [
     strDrink: "Buccaneer",
     strCategory: "Beer",
     strAlcoholic: "Alcoholic",
-    strGlass: "Beer pilsner",
+    strGlass: "Beer Pilsner",
     strInstructions:
       "Pour the corona into an 18oz beer glass pour the bacardi limon into the beer stir very gently",
     strDrinkThumb:
@@ -1290,53 +1255,18 @@ const data = [
     ]
   },
   {
-    idDrink: "178311",
-    strDrink: "Broadside",
-    strCategory: "Cocktail",
-    strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
-    strInstructions:
-      "Half fill the glass with ice cubes. Crush the wormwood and add to ice. Pour rum, scotch and butters, then serve!",
-    strDrinkThumb:
-      "https://www.thecocktaildb.com/images/media/drink/ghdjta1571687743.jpg",
-    ingredients: [
-      "151 proof rum",
-      "Scotch",
-      "Bitters",
-      "Wormwood",
-      "Ice",
-      "",
-      "",
-      null,
-      null,
-      null
-    ],
-    measurements: [
-      "1 shot",
-      "1/2 shot",
-      "3 drops",
-      "1 Fresh",
-      "cubes",
-      "",
-      "",
-      null,
-      null,
-      null
-    ]
-  },
-  {
     idDrink: "11106",
     strDrink: "Blackthorn",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Stir sloe gin and vermouth with ice and strain into a cocktail glass. Add the twist of lemon peel and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/xvswvy1441209430.jpg",
     ingredients: [
       "Sweet Vermouth",
-      "Sloe gin",
+      "Sloe Gin",
       "Lemon peel",
       null,
       null,
@@ -1364,13 +1294,13 @@ const data = [
     strDrink: "Bob Marley",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
+    strGlass: "Shot Glass",
     strInstructions: "Layer in a 2 oz shot glass or pony glass",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rrqrst1477140664.jpg",
     ingredients: [
-      "Midori melon liqueur",
-      "Jägermeister",
+      "Melon Liqueur",
+      "Jagermeister",
       "Goldschlager",
       null,
       null,
@@ -1398,15 +1328,15 @@ const data = [
     strDrink: "Bubble Gum",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Shot glass",
+    strGlass: "Shot Glass",
     strInstructions: "Layer in order into a shot glass.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/spuurv1468878783.jpg",
     ingredients: [
       "Vodka",
-      "Banana liqueur",
-      "Orange juice",
-      "Peach schnapps",
+      "Banana Liquor",
+      "Orange Juice",
+      "Peach Schnapps",
       null,
       null,
       null,
@@ -1432,7 +1362,7 @@ const data = [
     strDrink: "Bible Belt",
     strCategory: "Other/Unknown",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions: "Mix all ingredients, and pour over ice.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/6bec6v1503563675.jpg",
@@ -1440,7 +1370,7 @@ const data = [
       "Southern Comfort",
       "Triple sec",
       "Lime",
-      "Sour mix",
+      "Sour Mix",
       null,
       null,
       null,
@@ -1462,56 +1392,21 @@ const data = [
     ]
   },
   {
-    idDrink: "17120",
-    strDrink: "Brain Fart",
-    strCategory: "Punch / Party Drink",
-    strAlcoholic: "Alcoholic",
-    strGlass: "Punch bowl",
-    strInstructions:
-      "Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and soda's are very cold.",
-    strDrinkThumb:
-      "https://www.thecocktaildb.com/images/media/drink/rz5aun1504389701.jpg",
-    ingredients: [
-      "Everclear",
-      "Vodka",
-      "Mountain Dew",
-      "Surge",
-      "Lemon juice",
-      "Rum",
-      null,
-      null,
-      null,
-      null
-    ],
-    measurements: [
-      "1 fifth ",
-      "1 fifth Smirnoff red label ",
-      "2 L ",
-      "2 L ",
-      "1 small bottle ",
-      "1 pint ",
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
     idDrink: "11113",
     strDrink: "Bloody Mary",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned Glass",
     strInstructions:
       "Stirring gently, pour all ingredients into highball glass. Garnish.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/uyquuu1439906954.jpg",
     ingredients: [
       "Vodka",
-      "Tomato juice",
-      "Lemon juice",
-      "Worcestershire sauce",
-      "Tabasco sauce",
+      "Tomato Juice",
+      "Lemon Juice",
+      "Worcestershire Sauce",
+      "Tabasco Sauce",
       "Lime",
       null,
       null,
@@ -1536,7 +1431,7 @@ const data = [
     strDrink: "Blue Lagoon",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Pour vodka and curacao over ice in a highball glass. Fill with lemonade, top with the cherry, and serve.",
     strDrinkThumb:
@@ -1571,15 +1466,15 @@ const data = [
     strDrink: "Boston Sour",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Whiskey sour glass",
+    strGlass: "Whiskey Sour Glass",
     strInstructions:
       "Shake juice of lemon, powdered sugar, blended whiskey, and egg white with cracked ice and strain into a whiskey sour glass. Add the slice of lemon, top with the cherry, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/kxlgbi1504366100.jpg",
     ingredients: [
-      "Blended whiskey",
-      "Lemon",
-      "Powdered sugar",
+      "Blended Whiskey",
+      "Lemon Juice",
+      "Sugar",
       "Egg white",
       "Lemon",
       "Cherry",
@@ -1606,7 +1501,7 @@ const data = [
     strDrink: "Brandy Flip",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Whiskey sour glass",
+    strGlass: "Whiskey Sour Glass",
     strInstructions:
       "In a shaker half-filled with ice cubes, combine the brandy, egg, sugar, and cream. Shake well. Strain into a sour glass and garnish with the nutmeg.",
     strDrinkThumb:
@@ -1641,14 +1536,14 @@ const data = [
     strDrink: "Casino",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg",
     ingredients: [
       "Gin",
-      "Maraschino liqueur",
+      "Maraschino Liqueur",
       "Lemon juice",
       "Orange bitters",
       "Cherry",
@@ -1676,7 +1571,7 @@ const data = [
     strDrink: "Caipirinha",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned Glass",
     strInstructions:
       "Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.",
     strDrinkThumb:
@@ -1711,15 +1606,15 @@ const data = [
     strDrink: "Cherry Rum",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/twsuvr1441554424.jpg",
     ingredients: [
-      "Light rum",
-      "Cherry brandy",
-      "Light cream",
+      "White Rum",
+      "Cherry Brandy",
+      "Light Cream",
       null,
       null,
       null,
@@ -1746,13 +1641,13 @@ const data = [
     strDrink: "Cuba Libre",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Build all ingredients in a Collins glass filled with ice. Garnish with lime wedge.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/uuxsrr1473201663.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Lime",
       "Coca-Cola",
       null,
@@ -1781,13 +1676,13 @@ const data = [
     strDrink: "Cuba Libra",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Highball glass",
+    strGlass: "Highball Glass",
     strInstructions:
       "Fill tall glass with ice cubes. Add rum. Rub cut edge of lime on rim of glass then squeeze juice into glass. Fill with Coca-Cola. Garnish with lime slice. Enjoy!",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg",
     ingredients: [
-      "Dark rum",
+      "Dark Rum",
       "Lime",
       "Coca-Cola",
       "Ice",
@@ -1816,7 +1711,7 @@ const data = [
     strDrink: "Cafe Savoy",
     strCategory: "Coffee / Tea",
     strAlcoholic: "Alcoholic",
-    strGlass: "Coffee mug",
+    strGlass: "Coffee Mug",
     strInstructions:
       "Fill mug almost to top with coffee.Add milk, triple sec and brandy. Stir.",
     strDrinkThumb:
@@ -1853,12 +1748,12 @@ const data = [
     strAlcoholic: "Alcoholic",
     strGlass: "Highball glass",
     strInstructions:
-      "Pour 1oz of Spiced Rum into a highball glass with ice. Fill with Ginger Ale.",
+      "Pour 1 oz of Spiced Rum into a highball glass with ice. Fill with Ginger Ale.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/yqstxr1479209367.jpg",
     ingredients: [
-      "Spiced rum",
-      "Ginger ale",
+      "Spiced Rum",
+      "Ginger Ale",
       null,
       null,
       null,
@@ -1882,55 +1777,20 @@ const data = [
     ]
   },
   {
-    idDrink: "17830",
-    strDrink: "Corn n Oil",
-    strCategory: "Cocktail",
-    strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
-    strInstructions:
-      "Cut the half lime in half again. Add the lime, falernum, and bitters to a rocks glass. Muddle. Add the rum. (Aged Barbados rum such as Plantation 5 Year is recommended). Add ice and stir. Float the blackstrap rum on top. Serve with a straw.",
-    strDrinkThumb:
-      "https://www.thecocktaildb.com/images/media/drink/jfvyog1530108909.jpg",
-    ingredients: [
-      "Lime",
-      "Falernum",
-      "Angostura Bitters",
-      "Añejo rum",
-      "blackstrap rum",
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    measurements: [
-      "1/2",
-      "1/3 oz",
-      "2 dashes",
-      "1 oz",
-      "1 oz",
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
     idDrink: "11222",
     strDrink: "Casa Blanca",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Cocktail glass",
+    strGlass: "Cocktail Glass",
     strInstructions:
       "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg",
     ingredients: [
-      "Light rum",
-      "Triple sec",
-      "Lime juice",
-      "Maraschino liqueur",
+      "White Rum",
+      "Triple Sec",
+      "Lime Juice",
+      "Maraschino Liqueur",
       null,
       null,
       null,
@@ -2032,12 +1892,12 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/qwvwqr1441207763.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Port",
       "Lemon",
       "Powdered sugar",
       "Egg white",
-      "Carbonated water",
+      "Club Soda",
       null,
       null,
       null,
@@ -2139,7 +1999,7 @@ const data = [
     ingredients: [
       "Lime",
       "Sugar",
-      "White rum",
+      "White Rum",
       "Ice",
       null,
       null,
@@ -2416,7 +2276,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/i502ra1504349156.jpg",
     ingredients: [
-      "gin",
+      "Gin",
       "Peach Bitters",
       "Mint",
       null,
@@ -2486,7 +2346,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/usuuur1439906797.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Lime",
       "Powdered sugar",
       null,
@@ -2784,7 +2644,7 @@ const data = [
     strAlcoholic: "Alcoholic",
     strGlass: "Highball glass",
     strInstructions:
-      "Muddle the sugar into the lime wedges in an old-fashioned glass.\r\nFill the glass with ice cubes.\r\nPour the cachaca into the glass.\r\nStir well.",
+      "Muddle the sugar into the lime wedges in an Old-Fashioned glass.\r\nFill the glass with ice cubes.\r\nPour the cachaca into the glass.\r\nStir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/uwstrx1472406058.jpg",
     ingredients: [
@@ -2817,7 +2677,7 @@ const data = [
     strDrink: "Duchamp's Punch",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Shake all ingredients.\r\nDouble strain in a chilled double old fashioned glass with abig ice cube.\r\nGarnish with a couple of lavender sprigs",
     strDrinkThumb:
@@ -2966,7 +2826,7 @@ const data = [
       "Egg yolk",
       "Sugar",
       "Milk",
-      "Light rum",
+      "White Rum",
       "Bourbon",
       "Vanilla extract",
       "Salt",
@@ -3516,9 +3376,9 @@ const data = [
     strDrink: "Flying Dutchman",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "In an old-fashioned glass almost filled with ice cubes, combine the gin and triple sec. Stir well.",
+      "In an Old-Fashioned glass almost filled with ice cubes, combine the gin and triple sec. Stir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/akik8t1504519958.jpg",
     ingredients: [
@@ -3557,7 +3417,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/7oyrj91504884412.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Triple sec",
       "Lime juice",
       "Sugar",
@@ -3656,7 +3516,7 @@ const data = [
     strDrink: "French Connection",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently.",
     strDrinkThumb:
@@ -3795,13 +3655,13 @@ const data = [
     strDrink: "Frozen Mint Daiquiri",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into an old-fashioned glass and serve.",
+      "Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into an Old-Fashioned glass and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/jrhn1q1504884469.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Lime juice",
       "Mint",
       "Sugar",
@@ -3836,7 +3696,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/j2mqsb1504736097.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Pineapple",
       "Lime juice",
       "Sugar",
@@ -4040,9 +3900,9 @@ const data = [
     strDrink: "Gin Daisy",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "In a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the cherry and the orange slice.",
+      "In a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine. Shake well. Pour into an Old-Fashioned glass and garnish with the cherry and the orange slice.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/qwxysv1478819943.jpg",
     ingredients: [
@@ -4075,9 +3935,9 @@ const data = [
     strDrink: "Gin Sling",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve.",
+      "Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an Old-Fashioned glass over ice cubes and stir. Add the twist of orange peel and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/h8wmm41504883440.jpg",
     ingredients: [
@@ -4110,9 +3970,9 @@ const data = [
     strDrink: "Gin Smash",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Muddle sugar with carbonated water and mint sprigs in an old-fashioned glass. Add gin and 1 ice cube. Stir, add the orange slice and the cherry, and serve.",
+      "Muddle sugar with carbonated water and mint sprigs in an Old-Fashioned glass. Add gin and 1 ice cube. Stir, add the orange slice and the cherry, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/hp41fi1504883656.jpg",
     ingredients: [
@@ -4145,9 +4005,9 @@ const data = [
     strDrink: "Gin Toddy",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Mix powdered sugar and water in an old-fashioned glass. Add gin and one ice cube. Stir, add the twist of lemon peel, and serve.",
+      "Mix powdered sugar and water in an Old-Fashioned glass. Add gin and one ice cube. Stir, add the twist of lemon peel, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/l9gi5h1504820724.jpg",
     ingredients: [
@@ -4180,7 +4040,7 @@ const data = [
     strDrink: "Godfather",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently.",
     strDrinkThumb:
@@ -4215,9 +4075,9 @@ const data = [
     strDrink: "Godmother",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour vodka and amaretto into an old-fashioned glass over ice and serve.",
+      "Pour vodka and amaretto into an Old-Fashioned glass over ice and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/4889up1504368984.jpg",
     ingredients: [
@@ -4425,7 +4285,7 @@ const data = [
     strDrink: "Grand Blue",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions: "Serve in an old fashioned glass.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/vsrsqu1472761749.jpg",
@@ -4529,9 +4389,9 @@ const data = [
     strDrink: "Grass Skirt",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "In a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the pineapple slice.",
+      "In a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine. Shake well. Pour into an Old-Fashioned glass and garnish with the pineapple slice.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg",
     ingredients: [
@@ -4564,7 +4424,7 @@ const data = [
     strDrink: "Grim Reaper",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Mix Kahlua and 151 in glass. Quickly add ice and pour grenadine over ice to give ice red tint.",
     strDrinkThumb:
@@ -4940,7 +4800,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/59splc1504882899.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Pineapple juice",
       "Lemon juice",
       null,
@@ -5357,7 +5217,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/zj1usl1504884548.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Blended whiskey",
       "Lemon",
       "Powdered sugar",
@@ -5735,12 +5595,12 @@ const data = [
     strAlcoholic: "Alcoholic",
     strGlass: "Hurricane glass",
     strInstructions:
-      "Fill a tumbler with ice cubes. Add a shot of Tia Maria and a shot of Jamaican light rum. Fill the tumbler with milk. Blend until smooth and serve immediately.",
+      "Fill a tumbler with ice cubes. Add a shot of Tia Maria and a shot of Jamaican White Rum. Fill the tumbler with milk. Blend until smooth and serve immediately.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/urpvvv1441249549.jpg",
     ingredients: [
       "Coffee liqueur",
-      "Light rum",
+      "White Rum",
       "Ice",
       "Milk",
       null,
@@ -5908,7 +5768,7 @@ const data = [
     strDrink: "Jack's Vanilla Coke",
     strCategory: "Other/Unknown",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "After pouring in your ingredients, and adding 3-5 ice cubes, according to taste. Stir the drink with a stirrer to get the Vanilla off the bottom.",
     strDrinkThumb:
@@ -6187,7 +6047,7 @@ const data = [
     strDrink: "Kool-Aid Shot",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Pour into a large glass with ice and stir. Add a little cranberry juice to taste.",
     strDrinkThumb:
@@ -6432,7 +6292,7 @@ const data = [
     strAlcoholic: "Alcoholic",
     strGlass: "Shot glass",
     strInstructions:
-      "Mix Galliano and Absolut Citron in a shot glass, lay lemon wedge sprinkled with sugar over glass and pour a rum over wedge and glass. light rum with a lighter and let burn for a second. Do shot quickly and suck on lemon. If it is done correctly, this will taste like a shot of sweet lemonade.",
+      "Mix Galliano and Absolut Citron in a shot glass, lay lemon wedge sprinkled with sugar over glass and pour a rum over wedge and glass. White Rum with a lighter and let burn for a second. Do shot quickly and suck on lemon. If it is done correctly, this will taste like a shot of sweet lemonade.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/mx31hv1487602979.jpg",
     ingredients: [
@@ -6605,9 +6465,9 @@ const data = [
     strDrink: "Lord And Lady",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour the rum and Tia Maria into an old-fashioned glass almost filled with ice cubes. Stir well.",
+      "Pour the rum and Tia Maria into an Old-Fashioned glass almost filled with ice cubes. Stir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/quwrys1468923219.jpg",
     ingredients: [
@@ -6777,7 +6637,7 @@ const data = [
     ingredients: [
       "Vodka",
       "Tequila",
-      "Light rum",
+      "White Rum",
       "Gin",
       "Coca-Cola",
       "Lemon peel",
@@ -6810,7 +6670,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/rxtqps1478251029.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Lime",
       "Sugar",
       "Mint",
@@ -6880,7 +6740,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Orgeat syrup",
       "Triple sec",
       "Sweet and sour",
@@ -7399,13 +7259,13 @@ const data = [
     strDrink: "Monkey Wrench",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour all of the ingredients into an old-fashioned glass almost filled with ice cubes. Stir well.",
+      "Pour all of the ingredients into an Old-Fashioned glass almost filled with ice cubes. Stir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/8it05n1504353314.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Grapefruit juice",
       "Bitters",
       null,
@@ -7434,7 +7294,7 @@ const data = [
     strDrink: "Midnight Manx",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Fill a mixer with ice and add Baileys, Kahlua, Goldshlager, and cream. Shake for 5 seconds and Strain into a double rocks glass filled with ice. Add chilled coffee Stir and enjoy!",
     strDrinkThumb:
@@ -7543,7 +7403,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/f9erqb1504350557.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Pineapple juice",
       "Maraschino liqueur",
       "Grenadine",
@@ -7606,7 +7466,7 @@ const data = [
     strDrink: "Negroni",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions: "Stir into glass over ice, garnish and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg",
@@ -7952,7 +7812,7 @@ const data = [
     strDrink: "Old Fashioned",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry.",
     strDrinkThumb:
@@ -8334,7 +8194,7 @@ const data = [
     strDrink: "Penicillin",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Shake blended Scotch, lemon juice, honey syrup and ginger syrup with ice. Strain over large ice in chilled rocks glass. Float smoky Scotch on top (be sure to use a smoky Scotch such as an Islay single malt). Garnish with candied ginger.",
     strDrinkThumb:
@@ -8375,7 +8235,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/cpf4j51504371346.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Coconut milk",
       "Pineapple",
       null,
@@ -8898,7 +8758,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Brandy",
       "Lemon",
       "Raspberry syrup",
@@ -8933,7 +8793,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/qrwvps1478963017.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Sherry",
       "Lime",
       null,
@@ -9038,7 +8898,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/bylfi21504886323.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Lemon juice",
       "Sugar",
       "Orange",
@@ -9067,9 +8927,9 @@ const data = [
     strDrink: "Rum Toddy",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Dissolve powdered sugar in water in an old-fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve.",
+      "Dissolve powdered sugar in water in an Old-Fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/athdk71504886286.jpg",
     ingredients: [
@@ -9206,9 +9066,9 @@ const data = [
     strDrink: "Rusty Nail",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour the Scotch and Drambuie into an old-fashioned glass almost filled with ice cubes. Stir well. Garnish with the lemon twist.",
+      "Pour the Scotch and Drambuie into an Old-Fashioned glass almost filled with ice cubes. Stir well. Garnish with the lemon twist.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/yqsvtw1478252982.jpg",
     ingredients: [
@@ -9275,9 +9135,9 @@ const data = [
     strDrink: "Rum Cobbler",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "In an old-fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the rum. Stir well. Garnish with the cherry and the orange and lemon slices.",
+      "In an Old-Fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the rum. Stir well. Garnish with the cherry and the orange and lemon slices.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/5vh9ld1504390683.jpg",
     ingredients: [
@@ -9310,7 +9170,7 @@ const data = [
     strDrink: "Red Snapper",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions: "One shot each, shake n shoot",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/7p607y1504735343.jpg",
@@ -9344,7 +9204,7 @@ const data = [
     strDrink: "Royal Flush",
     strCategory: "Shot",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Pour all the ingredients into tumbler over ice. Strain into glass.",
     strDrinkThumb:
@@ -9525,7 +9385,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/w64lqm1504888810.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Milk",
       "Powdered sugar",
       "Nutmeg",
@@ -9560,7 +9420,7 @@ const data = [
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/4c85zq1511782093.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Orange juice",
       null,
       null,
@@ -9621,16 +9481,16 @@ const data = [
   },
   {
     idDrink: "12089",
-    strDrink: "Rum Old-fashioned",
+    strDrink: "Rum Old-Fashioned",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Stir powdered sugar, water, and bitters in an old-fashioned glass. When sugar has dissolved add ice cubes and light rum. Add the twist of lime peel, float 151 proof rum on top, and serve.",
+      "Stir powdered sugar, water, and bitters in an Old-Fashioned glass. When sugar has dissolved add ice cubes and White Rum. Add the twist of lime peel, float 151 proof rum on top, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/otn2011504820649.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "151 proof rum",
       "Powdered sugar",
       "Bitters",
@@ -9797,9 +9657,9 @@ const data = [
     strDrink: "Sazerac",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish.",
+      "Rinse a chilled Old-Fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/vvpxwy1439907208.jpg",
     ingredients: [
@@ -10496,9 +10356,9 @@ const data = [
     strDrink: "Scotch Cobbler",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour scotch, brandy, and curacao over ice in an old-fashioned glass. Add the orange slice, top with the mint sprig, and serve.",
+      "Pour scotch, brandy, and curacao over ice in an Old-Fashioned glass. Add the orange slice, top with the mint sprig, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg",
     ingredients: [
@@ -11190,7 +11050,7 @@ const data = [
     strDrink: "The Evil Blue Thing",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       'Pour ingredients into glass, and drop in a blue whale! The blue whale isn\'t really necessary, but it makes the drink more "fun".',
     strDrinkThumb:
@@ -11198,7 +11058,7 @@ const data = [
     ingredients: [
       "Creme de Cacao",
       "Blue Curacao",
-      "Light rum",
+      "White Rum",
       null,
       null,
       null,
@@ -11295,13 +11155,13 @@ const data = [
     strDrink: "Vesuvio",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.",
+      "Shake all ingredients with ice, strain into an Old-Fashioned glass over ice cubes, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/26cq601492976203.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Sweet Vermouth",
       "Lemon",
       "Powdered sugar",
@@ -11330,9 +11190,9 @@ const data = [
     strDrink: "Veteran",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour the rum and cherry brandy into an old-fashioned glass almost filled with ice cubes. Stir well.",
+      "Pour the rum and cherry brandy into an Old-Fashioned glass almost filled with ice cubes. Stir well.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg",
     ingredients: [
@@ -11400,13 +11260,13 @@ const data = [
     strDrink: "Van Vleet",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.",
+      "Shake all ingredients with ice, strain into an Old-Fashioned glass over ice cubes, and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/fgq2bl1492975771.jpg",
     ingredients: [
-      "Light rum",
+      "White Rum",
       "Maple syrup",
       "Lemon juice",
       null,
@@ -11818,9 +11678,9 @@ const data = [
     strDrink: "Whiskey Sour",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice.",
+      "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into Old-Fashioned glass filled with ice.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/o56h041504352725.jpg",
     ingredients: [
@@ -11853,9 +11713,9 @@ const data = [
     strDrink: "White Russian",
     strCategory: "Ordinary Drink",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
-      "Pour vodka and coffee liqueur over ice cubes in an old-fashioned glass. Fill with light cream and serve.",
+      "Pour vodka and coffee liqueur over ice cubes in an Old-Fashioned glass. Fill with light cream and serve.",
     strDrinkThumb:
       "https://www.thecocktaildb.com/images/media/drink/vsrupw1472405732.jpg",
     ingredients: [
@@ -12339,7 +12199,7 @@ const data = [
     strDrink: "Zippy's Revenge",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
-    strGlass: "Old-fashioned glass",
+    strGlass: "Old-Fashioned glass",
     strInstructions:
       "Mix Kool-Aid to taste then add Rum and ammaretto. shake well to disolve the sugar in the Kool-Aid... serve cold",
     strDrinkThumb:

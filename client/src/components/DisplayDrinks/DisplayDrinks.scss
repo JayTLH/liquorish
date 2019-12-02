@@ -3,6 +3,7 @@
   position: absolute;
   top: 26vh;
   left: 2vw;
+  z-index: 1;
 
   &__card {
     display: flex;
