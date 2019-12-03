@@ -1,13 +1,35 @@
+.nav {
+  &__logo {
+    background: none;
+    border: none;
+    margin: 0 0 20px 0;
+    outline: none;
+  }
+  
+  &__logo-img {
+    width: 170px;
+  }
+  
+  &__button {
+    font-family: inherit;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  &__link {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
   right: 60px;
   top: 50px;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 .bm-burger-bars {
@@ -18,18 +40,8 @@
   background: rgba(#000000, 0.5);
 }
 
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
 .bm-cross {
   background: #bdc3c7;
-}
-
-.bm-menu-wrap {
-  height: 100%;
-  position: fixed;
 }
 
 .bm-menu {
@@ -49,8 +61,4 @@
 
 .bm-item {
   display: inline-block;
-}
-
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
 }

@@ -26,32 +26,4 @@
     border: none;
     outline: none;
   }
-
-  &__logo {
-    background: none;
-    border: none;
-    margin: 0 0 20px 0;
-    outline: none;
-  }
-
-  &__logo-img {
-    width: 170px;
-  }
-
-  &__button {
-    font-family: inherit;
-    font-size: 24px;
-    background: none;
-    border: none;
-    outline: none;
-
-    &:hover {
-      background: blue;
-    }
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-  }
 }

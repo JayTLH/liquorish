@@ -52,20 +52,6 @@
     }
   }
 
-
-  &__search {
-    width: 600px;
-    height: 40px;
-    padding: 0 0 0 10px;
-    border: solid 2px black;
-    border-radius: 10px;
-    outline: none;
-
-    &:focus {
-      border-color: #ff7300;
-    }
-  }
-
   &__button-container {
     width: 300px;
     position: absolute;

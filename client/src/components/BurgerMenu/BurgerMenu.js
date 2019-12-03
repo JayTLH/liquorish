@@ -9,8 +9,14 @@ import logo from "../../styles/assets/logos/logo.png";
 
 export default class BurgerMenu extends Component {
   render() {
+    const burStyle = {
+      bmOverlay: {
+        background: 'none'
+      }
+    }
+
     return (
-      <Menu right>
+      <Menu right styles={burStyle}>
         <button className="nav__logo">
           <Link to="/">
             {/* change to profile icon */}

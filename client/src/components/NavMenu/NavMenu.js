@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // styles & assets
 import "./NavMenu.scss";
-import logobl from "../../styles/assets/logos/logo-bl.png";
+import logobl from "../../styles/assets/logos/logo2-bl.png";
 import iconSearch from "../../styles/assets/icons/icon-search.svg";
 
 // components

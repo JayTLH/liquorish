@@ -41,7 +41,7 @@ export default class Hero extends Component {
               <span className="hero__slogan--orange">Tail</span> Connoisseur
             </h6>
             <h6 className="hero__slogan--middle">
-              We offer a wide selection of drinks
+              We offer a wide selection of drinks,
               <br /> totalling over{" "}
               <span className="hero__slogan--orange">350</span>!
             </h6>

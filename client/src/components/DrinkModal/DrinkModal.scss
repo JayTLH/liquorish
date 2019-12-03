@@ -1,0 +1,48 @@
+.modal {
+  &__add {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: blue;
+    position: fixed;
+    right: 23px;
+    top: 73vh;
+  
+    &:hover {
+      background: blue;
+    }
+      right: 215px;
+  }
+
+  &__body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 32px 16px 0 16px;
+    background-color: white;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+      width: 608px;
+      height: 650px;
+      top: 50%;
+      left: 50%;
+      border-radius: 4px;
+      padding: 48px 50px 0px 50px;
+      transform: translate(-50%, -50%);
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

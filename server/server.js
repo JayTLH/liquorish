@@ -5,6 +5,7 @@ const cors = require('cors')
 
 // import routes
 const drinksRoute = require('./routes/drinks')
+const ingredientsRoute = require('./routes/ingredients')
 
 // middleware
 app.use(express.static('public'))
@@ -13,6 +14,7 @@ app.use(cors())
 
 // setting routes
 app.use('/drinks', drinksRoute)
+app.use('/ingredients', ingredientsRoute)
 
 // setting the server port
 app.listen(8080, () => {
