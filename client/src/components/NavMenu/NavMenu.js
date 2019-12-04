@@ -24,16 +24,18 @@ export default class NavMenu extends Component {
           <img className="nav__logo-left" src={logobl} alt="barkeep logo" />
         </Link>
 
-        <form className="nav__search" onSubmit={this.redirect}>
-          <button className="nav__search-button">
-            <img
-              className="nav__search-icon"
-              src={iconSearch}
-              alt="search button"
-            />
-          </button>
-          <Search data={this.props.data} />
-        </form>
+        {this.props.match.path === '/catalog' ? null :
+          <form className="nav__search" onSubmit={this.redirect}>
+            <button className="nav__search-button">
+              <img
+                className="nav__search-icon"
+                src={iconSearch}
+                alt="search button"
+              />
+            </button>
+            <Search data={this.props.data} />
+          </form>
+        }
 
         <BurgerMenu />
       </div>

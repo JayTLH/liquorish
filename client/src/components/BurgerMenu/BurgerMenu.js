@@ -17,19 +17,13 @@ export default class BurgerMenu extends Component {
 
     return (
       <Menu right styles={burStyle}>
-        <button className="nav__logo">
-          {/* <Link to="/">
-            change to profile icon
-            <img className="nav__logo-img" src={logo} alt="barkeep logo" />
-          </Link> */}
-        </button>
         <button className="nav__button">
           <Link to="/catalog">
             <p className="nav__link">Catalog</p>
           </Link>
         </button>
         <button className="nav__button">
-          <Link to="/customize">
+          <Link to="/">
             <p className="nav__link">Favorites</p>
           </Link>
         </button>

@@ -9,14 +9,14 @@ import './index.scss';
 // pages
 import Landing from './pages/Landing';
 import Drink from './pages/Drink';
-import Customize from './pages/Customize';
+import Catalog from './pages/Catalog';
 
 // render
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={Landing} />
-      <Route path="/customize" exact component={Customize} />
+      <Route path="/catalog" exact component={Catalog} />
       <Route path="/:drinkName" exact component={Drink} />
     </Switch>
   </BrowserRouter>, document.getElementById('root'));

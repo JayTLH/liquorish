@@ -106,9 +106,7 @@ export default class DrinkModal extends Component {
                   return (
                     <li className="modal__list-item" key={index.ing + index.price}>
                       <a className="modal__ingredient" href={index.url} target="_blank" rel="noopener noreferrer">{index.ing}</a>
-                      <input className="modal__checkbox" name="test" defaultValue="test">
-                        <input className="modal__price" type="number" name={`inp${count}`} defaultValue={this.state[`inp${count}`]} onChange={this.changeValue} />
-                      </input>
+                      <input className="modal__price" type="number" name={`inp${count}`} defaultValue={this.state[`inp${count}`]} onChange={this.changeValue} />
                     </li>
                   )
                 })}

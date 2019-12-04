@@ -57,6 +57,9 @@
     text-decoration: none;
     color: #000000;
     
+    &:hover {
+      color: rgba(#000000, 0.5);
+    }
   }
 
   &__price {
@@ -68,5 +71,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  &__submit {
+    font-family: inherit;
+    font-weight: 600;
+    width: 110px;
+    height: 40px;
+    background: black;
+    border: none;
+    border-radius: 15px;
+    color: #EFF1F0;
+    outline: none;
+    cursor: pointer;
   }
 }
