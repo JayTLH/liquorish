@@ -1,11 +1,9 @@
 // packages
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 import Autosuggest from "react-autosuggest";
 
 // styles & assets
 import "./Search.scss";
-// import iconSearch from "../../styles/assets/icons/icon-search.svg";
 
 export default class Search extends Component {
   state = {

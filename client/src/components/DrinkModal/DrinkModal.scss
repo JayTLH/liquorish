@@ -5,36 +5,28 @@
     border: none;
     border-radius: 50%;
     outline: none;
-    background: blue;
+    background: #000000;
     position: fixed;
-    right: 23px;
     top: 73vh;
-  
-    &:hover {
-      background: blue;
-    }
-      right: 215px;
+    right: 215px;
+    z-index: 3;
   }
 
   &__body {
+    width: 608px;
+    height: 650px;
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 32px 16px 0 16px;
+    top: 50%;
+    left: 50%;
+    padding: 48px 50px 0px 50px;
     background-color: white;
     outline: none;
     display: flex;
     flex-direction: column;
     overflow: auto;
-      width: 608px;
-      height: 650px;
-      top: 50%;
-      left: 50%;
-      border-radius: 4px;
-      padding: 48px 50px 0px 50px;
-      transform: translate(-50%, -50%);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 
   &__overlay {
@@ -44,5 +36,37 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    padding: 0;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__ingredient {
+    text-decoration: none;
+    color: #000000;
+    
+  }
+
+  &__price {
+    width: 100px;
+  }
+
+  &__result {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }

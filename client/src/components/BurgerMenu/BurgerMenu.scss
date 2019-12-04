@@ -21,6 +21,10 @@
   &__link {
     color: white;
     text-decoration: underline;
+
+    &:hover {
+      text-decoration-color: #ff7300;
+    }
   }
 }
 

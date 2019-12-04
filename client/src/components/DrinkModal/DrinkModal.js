@@ -1,14 +1,27 @@
 // packages
 import React, { Component } from 'react'
 import ReactModal from 'react-modal';
+import { motion } from "framer-motion";
 
 // styles and assets
 import './DrinkModal.scss';
-import add from './Icon-add.svg';
+import list from '../../styles/assets/icons/icon-list.png';
 
 export default class DrinkModal extends Component {
   state = {
-    displayModal: false
+    displayModal: false,
+    data: null,
+    total: null,
+    inp0: null,
+    inp1: null,
+    inp2: null,
+    inp3: null,
+    inp4: null,
+    inp5: null,
+    inp6: null,
+    inp7: null,
+    inp8: null,
+    inp9: null,
   }
 
   openModal = () => {
@@ -23,57 +36,99 @@ export default class DrinkModal extends Component {
     })
   }
 
+  calcTotal = () => {
+    let priceTotal = 0
+    this.props.data.forEach(index => {
+      priceTotal += Number(index.price)
+    })
+    priceTotal = Math.floor(priceTotal * 100) / 100
+    return priceTotal
+  }
+
+  changeValue = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  getTotal = (e) => {
+    e.preventDefault()
+    let newTotal = 0
+    for (let i = 0; i < 10; i++) {
+      if (this.state[`inp${i}`]) {
+        newTotal += Number(this.state[`inp${i}`])
+      }
+    }
+    this.setState({
+      total: Math.floor(newTotal * 100) / 100
+    })
+  }
+
+  componentDidMount() {
+    this.setState({
+      data: this.props.data,
+      total: this.calcTotal(),
+      inp0: this.props.data[0] ? this.props.data[0].price : null,
+      inp1: this.props.data[1] ? this.props.data[1].price : null,
+      inp2: this.props.data[2] ? this.props.data[2].price : null,
+      inp3: this.props.data[3] ? this.props.data[3].price : null,
+      inp4: this.props.data[4] ? this.props.data[4].price : null,
+      inp5: this.props.data[5] ? this.props.data[5].price : null,
+      inp6: this.props.data[6] ? this.props.data[6].price : null,
+      inp7: this.props.data[7] ? this.props.data[7].price : null,
+      inp8: this.props.data[8] ? this.props.data[8].price : null,
+      inp9: this.props.data[9] ? this.props.data[9].price : null,
+    })
+  }
+
   render() {
-    return (
-      <div className="modal">
-        <button className="modal__add" onClick={this.openModal}>
-          <img className="modal__add-icon" src={add} alt="add icon" />
-        </button>
-        <ReactModal ariaHideApp={false} isOpen={this.state.displayModal} onRequestClose={this.closeModal} className="modal__body" overlayClassName="modal__overlay">
-          <h1 className="modal__title">Add New</h1>
-          <form className="modal__form" onSubmit={this.props.submitHandler}>
-            <div className="modal__warehouse">
-              <label className="modal__label">WAREHOUSE</label><br />
-              <input type="text" name="warehouse" placeholder="Name & ID" />
-            </div>
-            <div className="modal__address">
-              <label className="modal__label">ADDRESS</label><br />
-              <input type="text" name="address" placeholder="Enter Address" />
-            </div>
-            <div className="modal__location">
-              <label className="modal__label">LOCATION</label><br />
-              <select className="modal__select" type="text" name="location">
-                <option value="Toronto, ON">Toronto, ON</option>
-              </select>
-            </div>
-            <div className="modal__contact-name">
-              <label className="modal__label">CONTACT NAME</label><br />
-              <input type="text" name="contact-name" placeholder="Enter Name" />
-            </div>
-            <div className="modal__position">
-              <label className="modal__label">POSITION</label><br />
-              <input type="text" name="position" placeholder="Enter Position" />
-            </div>
-            <div className="modal__phone-number">
-              <label className="modal__label">PHONE NUMBER</label><br />
-              <input type="number" name="phone-number" placeholder="(xxx) xxx-xxxx" />
-            </div>
-            <div className="modal__email">
-              <label className="modal__label">EMAIL</label><br />
-              <input type="text" name="email" placeholder="Enter Email" />
-            </div>
-            <div className="modal__item-description">
-              <label className="modal__label">ITEM DESCRIPTION</label><br />
-              <textarea className="modal__item-description-input" type="text" name="item-description" placeholder="Use commas to separate each category" />
-            </div>
-            {this.props.inputError ? <p>Inputs are invalid</p> : null}
-            <div className="modal__buttons">
-              <button className="modal__save">SAVE</button>
-              <button className="modal__cancel" onClick={this.closeModal}>CANCEL</button>
-            </div>
-          </form>
-        </ReactModal>
-      </div>
-    )
+    if (this.state.data) {
+      // used to assign price values to correct state inp{n}
+      let count = -1
+
+      return (
+        <div className="modal">
+          <motion.button
+            className="modal__add"
+            onClick={this.openModal}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.99 }}
+          >
+            <img className="modal__icon" src={list} alt="add icon" />
+          </motion.button>
+
+          <ReactModal ariaHideApp={false} isOpen={this.state.displayModal} onRequestClose={this.closeModal} className="modal__body" overlayClassName="modal__overlay">
+            <h1>Shopping List</h1>
+            <form className="modal__form">
+              <ul className="modal__list">
+                {this.props.data.map(index => {
+                  count++
+                  return (
+                    <li className="modal__list-item" key={index.ing + index.price}>
+                      <a className="modal__ingredient" href={index.url} target="_blank" rel="noopener noreferrer">{index.ing}</a>
+                      <input className="modal__checkbox" name="test" defaultValue="test">
+                        <input className="modal__price" type="number" name={`inp${count}`} defaultValue={this.state[`inp${count}`]} onChange={this.changeValue} />
+                      </input>
+                    </li>
+                  )
+                })}
+              </ul>
+              <div className="modal__result">
+                <p className="modal__total">{`Total: $${this.state.total}`}</p>
+                <motion.button
+                  className="modal__submit"
+                  onClick={this.getTotal}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.99 }}
+                >Calculate
+              </motion.button>
+              </div>
+            </form>
+          </ReactModal>
+        </div>
+      )
+    } else {
+      return (<></>)
+    }
   }
 }

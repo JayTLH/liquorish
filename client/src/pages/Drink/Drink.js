@@ -46,6 +46,19 @@ export default class Drink extends Component {
       const { strAlcoholic, strDrink, strDrinkThumb, strGlass, strInstructions, ingredients__001, ingredients__002, ingredients__003, ingredients__004, ingredients__005, ingredients__006, ingredients__007, ingredients__008, ingredients__009, ingredients__010, measurements__001, measurements__002, measurements__003, measurements__004, measurements__005, measurements__006, measurements__007, measurements__008, measurements__009, measurements__010 } = findDrink
       let ingredients = [ingredients__001, ingredients__002, ingredients__003, ingredients__004, ingredients__005, ingredients__006, ingredients__007, ingredients__008, ingredients__009, ingredients__010];
       let measurements = [measurements__001, measurements__002, measurements__003, measurements__004, measurements__005, measurements__006, measurements__007, measurements__008, measurements__009, measurements__010];
+
+      // making props for the modal
+      let ingredientsData = []
+      ingredients.forEach(ingIndex => {
+        this.state.ingData.forEach(dataIndex => {
+          if (ingIndex !== null) {
+            if (ingIndex.toLowerCase() === dataIndex.ing.toLowerCase() && ingIndex !== null) {
+              ingredientsData.push(dataIndex)
+            }
+          }
+        })
+      })
+
       return (
         <div className="drink">
           <NavMenu data={this.state.data} {...this.props} />
@@ -62,20 +75,13 @@ export default class Drink extends Component {
 
                 <div className="drink__list">
                   <ul className="drink__ingredients">
-                    {ingredients.map(index => {
-                      if (index == null) {
-                        return null;
-                      } else {
-                        let foundIng = this.state.ingData.find(name => {
-                          return name.ing.toLowerCase() === index.toLowerCase()
-                        })
-                        const { ing, mea, price, url } = foundIng
-                        return (
-                          <li className="drink__ingredient-list" key={nanoid()}>
-                            <a className="drink__ingredient-item" href={url} target="_blank">{index}</a>
-                          </li>
-                        );
-                      }
+                    {ingredientsData.map(index => {
+                      const { ing, url } = index
+                      return (
+                        <li className="drink__ingredient-list" key={nanoid()}>
+                          <a className="drink__ingredient-item" href={url} target="_blank" rel="noopener noreferrer">{ing}</a>
+                        </li>
+                      );
                     })}
                   </ul>
                   <ul className="drink__measurements">
@@ -97,7 +103,7 @@ export default class Drink extends Component {
             </div>
           </div>
 
-          <DrinkModal />
+          <DrinkModal data={ingredientsData} />
 
         </div>
       );
