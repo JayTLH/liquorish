@@ -23,7 +23,7 @@ export default class BurgerMenu extends Component {
           </Link>
         </button>
         <button className="nav__button">
-          <Link to="/">
+          <Link to="/favorites">
             <p className="nav__link">Favorites</p>
           </Link>
         </button>

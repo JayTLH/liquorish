@@ -5,7 +5,7 @@ import nanoid from 'nanoid';
 
 // styles & assets
 import "./Drink.scss";
-import like from '../../styles/assets/icons/icon-like.svg';
+import like from '../../styles/assets/icons/icon-like.png';
 import likeActive from '../../styles/assets/icons/icon-like-active.png';
 
 // components
@@ -52,7 +52,15 @@ export default class Drink extends Component {
           console.error(err)
         })
     } else {
-      // Axios.delete("http://localhost:8080/user", e)
+      Axios.delete(`http://localhost:8080/user/${e.strDrink}`)
+      .then(res => {
+        this.setState({
+          like: !this.state.like
+        })
+      })
+      .catch(err => {
+        console.error(err)
+      })
     }
   }
 
@@ -103,9 +111,9 @@ export default class Drink extends Component {
           <div className="drink__container">
             <div className="drink__top-box">
               <h1 className="drink__name">{strDrink}</h1>
-              <button className="drink__like" onClick={() => { this.toggleLike(findDrink) }}>
+              <button className="drink__like" value={strDrink} onClick={() => { this.toggleLike(findDrink) }}>
                 {this.state.like ?
-                  <img className="drink__like-img" src={likeActive} alt="heart icon" />
+                  <img className="drink__active" src={likeActive} alt="heart icon" />
                   : <img className="drink__like-img" src={like} alt="heart icon" />}
               </button>
             </div>
