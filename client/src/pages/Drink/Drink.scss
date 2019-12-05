@@ -25,6 +25,16 @@
     margin: 0;
   }
 
+  &__like {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  &__like-img {
+    cursor: pointer;
+  }
+
   &__box {
     width: 100%;
     display: flex;

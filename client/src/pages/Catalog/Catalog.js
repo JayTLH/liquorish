@@ -10,7 +10,6 @@ import iconSearch from '../../styles/assets/icons/icon-search.svg';
 
 // components
 import NavMenu from "../../components/NavMenu";
-import Search from '../../components/Search';
 
 export default class Catalog extends Component {
   state = {
@@ -36,6 +35,9 @@ export default class Catalog extends Component {
           ingData: ingredients.data
         })
       }))
+      .catch(err => {
+        console.error(err)
+      })
   }
 
   // search feature to change state
@@ -103,7 +105,7 @@ export default class Catalog extends Component {
                 alt="search button"
               />
             </button>
-            <Search data={this.state.data} />
+            <input className="catalog__search-input" type="text" placeholder="Search for Names" />
           </div>
 
           <div className="catalog__tags">

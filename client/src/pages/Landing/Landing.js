@@ -18,6 +18,9 @@ export default class Landing extends Component {
           data: res.data
         })
       })
+      .catch(err => {
+        console.error(err)
+      })
   }
 
   componentDidMount() {

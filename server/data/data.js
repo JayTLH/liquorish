@@ -6082,7 +6082,7 @@ const data = [
   },
   {
     idDrink: 15841,
-    strDrink: "Mojito #3",
+    strDrink: "Mojito 3",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
     strGlass: "Collins glass",

@@ -5,7 +5,8 @@ import nanoid from 'nanoid';
 
 // styles & assets
 import "./Drink.scss";
-import like from '../../styles/assets/icons/icons-like.svg';
+import like from '../../styles/assets/icons/icon-like.svg';
+import likeActive from '../../styles/assets/icons/icon-like-active.png';
 
 // components
 import NavMenu from "../../components/NavMenu";
@@ -34,14 +35,45 @@ export default class Drink extends Component {
           ingData: ingredients.data
         })
       }))
+      .catch(err => {
+        console.error(err)
+      })
   }
 
-  toggleLike = () => {
-    // have to do api post, delete call to get user list, fs package, favorites page will do api get
+  toggleLike = (e) => {
+    if (!this.state.like) {
+      Axios.post("http://localhost:8080/user", e)
+        .then(res => {
+          this.setState({
+            like: !this.state.like
+          })
+        })
+        .catch(err => {
+          console.error(err)
+        })
+    } else {
+      // Axios.delete("http://localhost:8080/user", e)
+    }
+  }
+
+  // checking to see if user already liked the drink
+  checkLike = () => {
+    Axios.get("http://localhost:8080/user")
+      .then(res => {
+        let findLike = res.data.find(index => {
+          return (index.strDrink === this.props.match.params.drinkName)
+        })
+        if (findLike) {
+          this.setState({
+            like: !this.state.like
+          })
+        }
+      })
   }
 
   componentDidMount() {
     this.getData();
+    this.checkLike();
   }
 
   render() {
@@ -71,7 +103,11 @@ export default class Drink extends Component {
           <div className="drink__container">
             <div className="drink__top-box">
               <h1 className="drink__name">{strDrink}</h1>
-              <img className="drink__like" src={like} alt="heart icon" />
+              <button className="drink__like" onClick={() => { this.toggleLike(findDrink) }}>
+                {this.state.like ?
+                  <img className="drink__like-img" src={likeActive} alt="heart icon" />
+                  : <img className="drink__like-img" src={like} alt="heart icon" />}
+              </button>
             </div>
 
             <div className="drink__box">
