@@ -5,6 +5,7 @@ import nanoid from 'nanoid';
 
 // styles & assets
 import "./Drink.scss";
+import like from '../../styles/assets/icons/icons-like.svg';
 
 // components
 import NavMenu from "../../components/NavMenu";
@@ -14,6 +15,7 @@ export default class Drink extends Component {
   state = {
     data: null,
     ingData: null,
+    like: false
   }
 
   getDrinkData = () => {
@@ -32,6 +34,10 @@ export default class Drink extends Component {
           ingData: ingredients.data
         })
       }))
+  }
+
+  toggleLike = () => {
+    // have to do api post, delete call to get user list, fs package, favorites page will do api get
   }
 
   componentDidMount() {
@@ -63,7 +69,11 @@ export default class Drink extends Component {
         <div className="drink">
           <NavMenu data={this.state.data} {...this.props} />
           <div className="drink__container">
-            <h1 className="drink__name">{strDrink}</h1>
+            <div className="drink__top-box">
+              <h1 className="drink__name">{strDrink}</h1>
+              <img className="drink__like" src={like} alt="heart icon" />
+            </div>
+
             <div className="drink__box">
               <img className="drink__img" src={strDrinkThumb} alt={strDrink} />
 
