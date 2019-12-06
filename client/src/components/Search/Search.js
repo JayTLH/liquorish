@@ -11,10 +11,6 @@ export default class Search extends Component {
     suggestions: []
   };
 
-  escapeRegexCharacters = str => {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  };
-
   getSuggestions = value => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;

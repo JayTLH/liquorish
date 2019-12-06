@@ -64,6 +64,11 @@ export default class DrinkModal extends Component {
     })
   }
 
+  printList = () => {
+    window.print();
+    return false;
+  }
+
   componentDidMount() {
     this.setState({
       data: this.props.data,
@@ -119,6 +124,13 @@ export default class DrinkModal extends Component {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.99 }}
                 >Calculate
+              </motion.button>
+                <motion.button
+                  className="modal__submit"
+                  onClick={this.printList}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.99 }}
+                >Print
               </motion.button>
               </div>
             </form>
