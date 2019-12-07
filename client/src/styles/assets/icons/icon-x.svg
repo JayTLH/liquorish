@@ -1,0 +1,4 @@
+<svg id="icons_dark_close" data-name="icons/dark/close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bg" width="24" height="24" fill="none"/>
+  <path id="union" d="M7.25,15.25V8.75H.75a.75.75,0,0,1,0-1.5h6.5V.75a.75.75,0,0,1,1.5,0v6.5h6.5a.75.75,0,0,1,0,1.5H8.75v6.5a.75.75,0,1,1-1.5,0Z" transform="translate(12 1.086) rotate(45)" fill="#454f63"/>
+</svg>

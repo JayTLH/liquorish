@@ -27,7 +27,7 @@ router.delete('/:id', (req, res) => {
   })
   userCopy.splice(itemIndex, 1)
   user = userCopy
-  res.send("delete successful")
+  res.send(user)
 })
 
 module.exports = router;
