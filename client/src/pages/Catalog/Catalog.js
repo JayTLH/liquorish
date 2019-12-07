@@ -10,6 +10,7 @@ import iconSearch from '../../styles/assets/icons/icon-search.svg';
 
 // components
 import NavMenu from "../../components/NavMenu";
+import TopButton from '../../components/TopButton';
 
 export default class Catalog extends Component {
   state = {
@@ -116,7 +117,7 @@ export default class Catalog extends Component {
                 alt="search button"
               />
             </button>
-            <Select isMulti options={this.selectIng()} onChange={this.findTag} />
+            <Select className="catalog__select" classNamePrefix="catalog" isMulti options={this.selectIng()} onChange={this.findTag} />
           </div>
 
           <div className="catalog__display">
@@ -131,6 +132,8 @@ export default class Catalog extends Component {
               )
             })}
           </div>
+
+          <TopButton />
         </div>
       );
     }

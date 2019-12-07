@@ -1,0 +1,15 @@
+.top {
+  &__button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #000000;
+    position: fixed;
+    top: 73vh;
+    right: 215px;
+    z-index: 3;
+    cursor: pointer;
+  }
+}

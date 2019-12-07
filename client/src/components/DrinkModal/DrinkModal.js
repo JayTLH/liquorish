@@ -94,7 +94,7 @@ export default class DrinkModal extends Component {
       return (
         <div className="modal">
           <motion.button
-            className="modal__add"
+            className="modal__button"
             onClick={this.openModal}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.99 }}

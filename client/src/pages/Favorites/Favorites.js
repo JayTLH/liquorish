@@ -11,23 +11,33 @@ import NavMenu from "../../components/NavMenu";
 
 export default class Favorites extends Component {
   state = {
-    data: null
+    data: null,
+    userData: null
   }
 
-  getApi = () => {
-    Axios.get("http://localhost:8080/user")
-      .then(res => {
+  getDrinkData = () => {
+    return Axios.get("http://localhost:8080/drinks");
+  };
+
+  getCreationsData = () => {
+    return Axios.get("http://localhost:8080/user");
+  };
+
+  getData = () => {
+    Axios.all([this.getDrinkData(), this.getCreationsData()])
+      .then(Axios.spread((drinks, user) => {
         this.setState({
-          data: res.data
+          data: drinks.data,
+          userData: user.data
         })
-      })
+      }))
       .catch(err => {
         console.error(err)
       })
   }
 
   componentDidMount() {
-    this.getApi()
+    this.getData()
   }
 
   render() {
@@ -36,7 +46,7 @@ export default class Favorites extends Component {
         <div className="favorites">
           <NavMenu data={this.state.data} {...this.props} />
           <div className="favorites__container">
-            {this.state.data.length ? this.state.data.map(index => {
+            {this.state.userData.length ? this.state.userData.map(index => {
               return (
                 <div className="favorites__card" key={index.strDrink}>
                   <Link to={`/${index.strDrink}`}>
