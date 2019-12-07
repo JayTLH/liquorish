@@ -4,7 +4,7 @@ const router = express.Router();
 const fs = require('fs');
 
 // import data
-let creations = require('../data/creations/creations');
+let creations = require('../data/creations.json');
 
 // setting endpoints
 // sending creations data

@@ -3,11 +3,11 @@ const express = require('express')
 const router = express.Router()
 
 // import data
-const data = require('../data/data/data')
+const drinks = require('../data/drinks.json')
 
 // setting endpoints
 router.get('/', (req, res) => {
-  res.send(data)
+  res.send(drinks)
 })
 
 module.exports = router
