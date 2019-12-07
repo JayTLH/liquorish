@@ -4,10 +4,9 @@ const router = express.Router();
 const fs = require('fs');
 
 // import data
-let creations = require('../data/creations');
+let creations = require('../data/creations/creations');
 
 // setting endpoints
-
 // sending creations data
 router.get('/', (req, res) => {
   res.send(creations);

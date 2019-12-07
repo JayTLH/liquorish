@@ -4,7 +4,7 @@ const router = express.Router();
 const fs = require('fs');
 
 // import data
-let user = require('../data/user');
+let user = require('../data/user.json');
 
 // setting endpoints
 
@@ -16,6 +16,9 @@ router.get('/', (req, res) => {
 // recieving new liked item
 router.post('/', (req, res) => {
   user.push(req.body);
+  fs.writeFile('./data/user.json', JSON.stringify(user), (err) => {
+    if (err) throw err;
+  })
   res.status(201).send(user);
 });
 
@@ -26,8 +29,10 @@ router.delete('/:id', (req, res) => {
     return index.strDrink === req.params.id
   })
   userCopy.splice(itemIndex, 1)
-  user = userCopy
-  res.send(user)
+  fs.writeFile('./data/user.json', JSON.stringify(userCopy), (err) => {
+    if (err) throw err;
+  })
+  res.send(userCopy)
 })
 
 module.exports = router;
