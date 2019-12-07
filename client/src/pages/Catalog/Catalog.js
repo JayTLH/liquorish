@@ -20,11 +20,6 @@ const customStyles = {
     width: "550px",
     background: "none",
     border: "none"
-  }),
-
-  menu: (provided, state) => ({
-    ...provided,
-    zIndex: 1234
   })
 }
 
@@ -111,7 +106,7 @@ export default class Catalog extends Component {
   render() {
     if (this.state.data) {
       return (
-        <div className="catalog">
+        <div className="catalog" onScroll={this.scrollAppear}>
           <NavMenu data={this.state.data} {...this.props} />
 
           <div className="catalog__search" onChange={this.liveSearch}>
@@ -139,10 +134,12 @@ export default class Catalog extends Component {
           <div className="catalog__display">
             {this.state.data.map(index => {
               return (
-                <Link to={index.strDrink} key={index.strDrink}>
+                <Link className="catalog__link" to={index.strDrink} key={index.strDrink}>
                   <div className="catalog__card">
-                    <img className="catalog__img" src={index.strDrinkThumb} alt="drink" />
-                    <p className="catalog__name">{index.strDrink}</p>
+                    <div className="catalog__background">
+                      <img className="catalog__img" src={index.strDrinkThumb} alt="drink" />
+                      <p className="catalog__name">{index.strDrink}</p>
+                    </div>
                   </div>
                 </Link>
               )

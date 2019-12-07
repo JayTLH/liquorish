@@ -17,6 +17,7 @@ export default class DrinkModal extends Component {
         <motion.button
           className="top__button"
           onClick={this.scrollTop}
+          onScroll={this.scrollAppear}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.99 }}
         >

@@ -39,7 +39,7 @@ export default class DrinkModal extends Component {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.99 }}
         >
-          <img className="modal__icon" src={add} alt="add icon" />
+          <img className="modal__icon-add" src={add} alt="add icon" />
         </motion.button>
 
         <ReactModal ariaHideApp={false} isOpen={this.state.displayModal} onRequestClose={this.closeModal} className="modal__body" overlayClassName="modal__overlay">
