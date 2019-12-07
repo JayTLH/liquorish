@@ -5,18 +5,16 @@ import nanoid from 'nanoid';
 
 // styles & assets
 import "./Drink.scss";
-import like from '../../styles/assets/icons/icon-like.png';
-import likeActive from '../../styles/assets/icons/icon-like-active.png';
 
 // components
 import NavMenu from "../../components/NavMenu";
+import LikeButton from '../../components/LikeButton';
 import DrinkModal from "../../components/DrinkModal";
 
 export default class Drink extends Component {
   state = {
     data: null,
     ingData: null,
-    like: false
   }
 
   getDrinkData = () => {
@@ -40,48 +38,8 @@ export default class Drink extends Component {
       })
   }
 
-  toggleLike = (e) => {
-    if (!this.state.like) {
-      Axios.post("http://localhost:8080/user", e)
-        .then(res => {
-          this.setState({
-            like: !this.state.like
-          })
-        })
-        .catch(err => {
-          console.error(err)
-        })
-    } else {
-      Axios.delete(`http://localhost:8080/user/${e.strDrink}`)
-      .then(res => {
-        this.setState({
-          like: !this.state.like
-        })
-      })
-      .catch(err => {
-        console.error(err)
-      })
-    }
-  }
-
-  // checking to see if user already liked the drink
-  checkLike = () => {
-    Axios.get("http://localhost:8080/user")
-      .then(res => {
-        let findLike = res.data.find(index => {
-          return (index.strDrink === this.props.match.params.drinkName)
-        })
-        if (findLike) {
-          this.setState({
-            like: !this.state.like
-          })
-        }
-      })
-  }
-
   componentDidMount() {
     this.getData();
-    this.checkLike();
   }
 
   render() {
@@ -111,11 +69,7 @@ export default class Drink extends Component {
           <div className="drink__container">
             <div className="drink__top-box">
               <h1 className="drink__name">{strDrink}</h1>
-              <button className="drink__like" value={strDrink} onClick={() => { this.toggleLike(findDrink) }}>
-                {this.state.like ?
-                  <img className="drink__active" src={likeActive} alt="heart icon" />
-                  : <img className="drink__like-img" src={like} alt="heart icon" />}
-              </button>
+              <LikeButton strDrink={strDrink} findDrink={findDrink} {...this.props}/>
             </div>
 
             <div className="drink__box">

@@ -1,0 +1,17 @@
+.like-button {
+  &__like {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  &__like-img {
+    cursor: pointer;
+  }
+
+  &__active {
+    width: 18px;
+    height: 17px;
+    cursor: pointer;
+  }
+}

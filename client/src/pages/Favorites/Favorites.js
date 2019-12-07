@@ -49,10 +49,10 @@ export default class Favorites extends Component {
             {this.state.userData.length ? this.state.userData.map(index => {
               return (
                 <div className="favorites__card" key={index.strDrink}>
-                  <Link to={`/${index.strDrink}`}>
+                  <Link className="favorites__link" to={`/${index.strDrink}`}>
                     <img className="favorites__img" src={index.strDrinkThumb} alt="drink" />
+                    <h2 className="favorites__name">{index.strDrink}</h2>
                   </Link>
-                  <h2 className="favorites__name">{index.strDrink}</h2>
                 </div>
               )
             }) : <div>Add Something To Your Favorites</div>}

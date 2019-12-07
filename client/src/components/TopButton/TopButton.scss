@@ -12,6 +12,11 @@
     right: 50px;
     z-index: 3;
     cursor: pointer;
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__icon {
