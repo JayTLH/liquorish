@@ -7,10 +7,26 @@ import Axios from "axios";
 // styles & assets
 import "./Catalog.scss";
 import iconSearch from '../../styles/assets/icons/icon-search.svg';
+import iconIngredients from '../../styles/assets/icons/icon-ingredients.png';
 
 // components
 import NavMenu from "../../components/NavMenu";
 import TopButton from '../../components/TopButton';
+
+// styling for the select component
+const customStyles = {
+  control: (provided, state) => ({
+    ...provided,
+    width: "550px",
+    background: "none",
+    border: "none"
+  }),
+
+  menu: (provided, state) => ({
+    ...provided,
+    zIndex: 1234
+  })
+}
 
 export default class Catalog extends Component {
   state = {
@@ -112,12 +128,12 @@ export default class Catalog extends Component {
           <div className="catalog__tags">
             <button className="catalog__search-button">
               <img
-                className="catalog__search-icon"
-                src={iconSearch}
+                className="catalog__ing-icon"
+                src={iconIngredients}
                 alt="search button"
               />
             </button>
-            <Select className="catalog__select" classNamePrefix="catalog" isMulti options={this.selectIng()} onChange={this.findTag} />
+            <Select styles={customStyles} isMulti options={this.selectIng()} onChange={this.findTag} />
           </div>
 
           <div className="catalog__display">

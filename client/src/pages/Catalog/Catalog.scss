@@ -20,7 +20,7 @@
   }
 
   &__search-input {
-    width: 500px;
+    width: 600px;
     font-family: inherit;
     background: none;
     border: none;
@@ -39,6 +39,11 @@
     display: flex;
   }
 
+  &__ing-icon {
+    width: 24px;
+    height: 24px;
+  }
+
   &__display {
     width: 800px;
     position: absolute;
@@ -47,15 +52,8 @@
     transform: translate(-50%, 0);
     display: flex;
     flex-wrap: wrap;
+    z-index: -1;
   }
-
-  &__select {
-    width: 600px;
-  }
-
-  // &__control {
-  //   background: none;
-  // }
 
   &__card {
     width: 200px;

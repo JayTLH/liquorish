@@ -1,15 +1,20 @@
 .top {
   &__button {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px;
     outline: none;
     background: #000000;
     position: fixed;
-    top: 73vh;
-    right: 215px;
+    bottom: 50px;
+    right: 50px;
     z-index: 3;
     cursor: pointer;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
   }
 }

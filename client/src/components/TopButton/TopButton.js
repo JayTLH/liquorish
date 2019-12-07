@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 // styles and assets
 import './TopButton.scss';
-import add from '../../styles/assets/icons/icon-add.svg';
+import up from '../../styles/assets/icons/icon-up.png';
 
 export default class DrinkModal extends Component {
   scrollTop = (e) => {
-    console.log(e.target)
+    document.documentElement.scrollTop = 0;
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class DrinkModal extends Component {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.99 }}
         >
-          <img className="top__icon" src={add} alt="up icon" />
+          <img className="top__icon" src={up} alt="up icon" />
         </motion.button>
       </div>
     )
