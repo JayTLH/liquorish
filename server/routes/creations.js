@@ -2,6 +2,17 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
+const multer = require('multer')
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, './uploads');
+  },
+  filename: (req, file, cb) => {
+    cb(null, new Date().getTime() + file.originalname);
+  }
+})
+const upload = multer({storage: storage})
 
 // import data
 let creations = require('../data/creations.json');
@@ -13,8 +24,8 @@ router.get('/', (req, res) => {
 });
 
 // recieving new created item
-router.post('/', (req, res) => {
-  creations.push(req.body);
+router.post('/', upload.single('uploadImage'), (req, res) => {
+  // creations.push(req.body);
   res.status(201).send(creations);
 });
 
