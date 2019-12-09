@@ -91,7 +91,6 @@ export default class Favorites extends Component {
               )
             }) : <div>Add Something To Your Favorites</div>}
           </div>
-
           <TopButton />
         </div>
       )
