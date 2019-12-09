@@ -1,4 +1,4 @@
-.modal {
+.creations-modal {
   &__add {
     width: 70px;
     height: 70px;
@@ -45,45 +45,102 @@
     height: 24px;
   }
 
-  &__list {
-    padding: 0;
+  &__form {
+    display: flex;
+    flex-direction: column;
   }
 
-  &__list-item {
+  &__image {
+    display: none;
+  }
+
+  &__image-label {
+    width: 110px;
+    height: 22px;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 13px;
+    background: #000000;
+    color: #ffffff;
+  }
+
+  &__name {
+    height: 28px;
+    padding: 0 0 0 10px;
+    border: solid 1px silver;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    font-family: inherit;
+    outline: none;
+  }
+
+  &__box {
+    margin: 0 0 10px 0;
     display: flex;
     justify-content: space-between;
   }
 
-  &__ingredient {
-    text-decoration: none;
-    color: #000000;
-    
-    &:hover {
-      color: rgba(#000000, 0.5);
-    }
-  }
-
-  &__price {
-    width: 100px;
-  }
-
-  &__result {
-    align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  &__submit {
+  &__type {
+    width: 245px;
+    padding: 0 0 0 7px;
+    height: 28px;
+    border: solid 1px silver;
+    border-radius: 4px;
     font-family: inherit;
-    font-weight: 600;
-    width: 110px;
-    height: 40px;
-    background: black;
-    border: none;
-    border-radius: 15px;
-    color: #EFF1F0;
     outline: none;
-    cursor: pointer;
+  }
+
+  &__glass {
+    width: 245px;
+    padding: 0 0 0 10px;
+    height: 28px;
+    border: solid 1px silver;
+    border-radius: 4px;
+    font-family: inherit;
+    outline: none;
+  }
+
+  &__instructions {
+    height: 70px;
+    border: solid 1px silver;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    resize: none;
+    font-family: inherit;
+    outline: none;
+    padding: 6px 0 0 10px;
+  }
+
+  &__ing-label {
+    margin: 0 0 10px 0;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__ingredients {
+    width: 245px;
+    height: 28px;
+    border: solid 1px silver;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    font-family: inherit;
+    outline: none;
+    padding: 0 0 0 10px;
+  }
+
+  &__measurements {
+    width: 245px;
+    height: 28px;
+    border: solid 1px silver;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    font-family: inherit;
+    outline: none;
+    padding: 0 0 0 10px;
   }
 }

@@ -18,6 +18,11 @@ export default class BurgerMenu extends Component {
     return (
       <Menu right styles={burStyle}>
         <button className="nav__button">
+          <Link to="/">
+            <p className="nav__link">Home</p>
+          </Link>
+        </button>
+        <button className="nav__button">
           <Link to="/catalog">
             <p className="nav__link">Catalog</p>
           </Link>

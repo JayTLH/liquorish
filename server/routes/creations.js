@@ -2,14 +2,15 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const multer = require('multer')
 
+// multer package setup to receive images
+const multer = require('multer')
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, './uploads');
+  destination: (req, file, callBack) => {
+    callBack(null, './public/uploads');
   },
-  filename: (req, file, cb) => {
-    cb(null, new Date().getTime() + file.originalname);
+  filename: (req, file, callBack) => {
+    callBack(null, new Date().getTime() + file.originalname);
   }
 })
 const upload = multer({storage: storage})
@@ -26,6 +27,11 @@ router.get('/', (req, res) => {
 // recieving new created item
 router.post('/', upload.single('uploadImage'), (req, res) => {
   // creations.push(req.body);
+  console.log("file", req.file)
+  console.log("body", req.body)
+  // let incomingUpload = {
+
+  // }
   res.status(201).send(creations);
 });
 
