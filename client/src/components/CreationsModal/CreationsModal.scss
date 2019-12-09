@@ -120,6 +120,13 @@
   &__stats {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 10px 0;
+    flex-direction: column;
+  }
+
+  &__ingredient-input {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__ingredients {
@@ -142,5 +149,20 @@
     font-family: inherit;
     outline: none;
     padding: 0 0 0 10px;
+  }
+
+  &__submit {
+    font-family: inherit;
+    font-weight: 600;
+    width: 90px;
+    height: 30px;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+    color: #EFF1F0;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
   }
 }

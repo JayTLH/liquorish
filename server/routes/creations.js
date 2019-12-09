@@ -1,6 +1,7 @@
 // import packages
 const express = require('express');
 const router = express.Router();
+const nanoid = require('nanoid')
 const fs = require('fs');
 
 // multer package setup to receive images
@@ -13,7 +14,7 @@ const storage = multer.diskStorage({
     callBack(null, new Date().getTime() + file.originalname);
   }
 })
-const upload = multer({storage: storage})
+const upload = multer({ storage: storage })
 
 // import data
 let creations = require('../data/creations.json');
@@ -27,11 +28,17 @@ router.get('/', (req, res) => {
 // recieving new created item
 router.post('/', upload.single('uploadImage'), (req, res) => {
   // creations.push(req.body);
-  console.log("file", req.file)
-  console.log("body", req.body)
-  // let incomingUpload = {
-
-  // }
+  // console.log("file", req.file)
+  // console.log("body", req.body)
+  let incomingUpload = {
+    idDrink: nanoid(),
+    strDrink: req.body.strDrink,
+    strAlcoholic: req.body.strAlcoholic,
+    strGlass: req.body.strGlass,
+    strInstructions: req.body.strInstructions,
+    strDrinkThumb: `http://localhost:8080/upload`
+  }
+  console.log(incomingUpload)
   res.status(201).send(creations);
 });
 
