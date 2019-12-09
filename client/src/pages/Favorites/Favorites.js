@@ -8,7 +8,7 @@ import "./Favorites.scss";
 
 // components
 import NavMenu from "../../components/NavMenu";
-import DeleteFavorites from '../../components/DeleteFavorites';
+import DeleteButton from '../../components/DeleteButton';
 import TopButton from '../../components/TopButton';
 
 export default class Favorites extends Component {
@@ -39,7 +39,7 @@ export default class Favorites extends Component {
   }
 
   // delete favorite function
-  removeFav = (e) => {
+  removeButton = (e) => {
     Axios.delete(`http://localhost:8080/user/${e.target.id}`)
       .then(res => {
         this.setState({
@@ -72,7 +72,7 @@ export default class Favorites extends Component {
                       <Link className="favorites__link" to={`/${index.strDrink}`}>
                         <h2 className="favorites__name">{index.strDrink}</h2>
                       </Link>
-                      <DeleteFavorites strDrink={index.strDrink} removeFav={this.removeFav} />
+                      <DeleteButton strDrink={index.strDrink} removeButton={this.removeButton} />
                     </div>
                     <ul className="favorites__list">
                       {index.ingredients__001 ? <li className="favorites__list-item">{index.ingredients__001}</li> : null}

@@ -51,8 +51,6 @@ export default class Drink extends Component {
       let ingredients = [ingredients__001, ingredients__002, ingredients__003, ingredients__004, ingredients__005, ingredients__006, ingredients__007, ingredients__008, ingredients__009, ingredients__010];
       let measurements = [measurements__001, measurements__002, measurements__003, measurements__004, measurements__005, measurements__006, measurements__007, measurements__008, measurements__009, measurements__010];
 
-      console.log(findDrink.ingredients__001)
-
       // making props for the modal
       let ingredientsData = []
       ingredients.forEach(ingIndex => {

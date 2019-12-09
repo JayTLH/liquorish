@@ -10,6 +10,7 @@ import "./Creations.scss";
 import NavMenu from "../../components/NavMenu";
 import CreationsModal from "../../components/CreationsModal";
 import TopButton from '../../components/TopButton';
+import DeleteButton from '../../components/DeleteButton';
 
 export default class Creations extends Component {
   state = {
@@ -109,6 +110,18 @@ export default class Creations extends Component {
     Axios.post("http://localhost:8080/creations", formDataBody)
   }
 
+  removeButton = (e) => {
+    Axios.delete(`http://localhost:8080/creations/${e.target.id}`)
+      .then(res => {
+        this.setState({
+          creationsData: res.data
+        })
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
+
   componentDidMount() {
     this.getData()
   }
@@ -131,7 +144,7 @@ export default class Creations extends Component {
                     <Link className="creations__link" to={`/${index.strDrink}`}>
                       <h2 className="creations__name">{index.strDrink}</h2>
                     </Link>
-                    {/* <DeleteFavorites strDrink={index.strDrink} removeFav={this.removeFav} /> */}
+                    <DeleteButton strDrink={index.strDrink} removeButton={this.removeButton} />
                   </div>
                   <ul className="creations__list">
                     {index.ingredients__001 ? <li className="creations__list-item">{index.ingredients__001}</li> : null}

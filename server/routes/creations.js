@@ -140,8 +140,20 @@ router.delete('/:id', (req, res) => {
     return index.strDrink === req.params.id
   })
   creationsCopy.splice(itemIndex, 1)
-  creations = creationsCopy
-  res.send("delete successful")
+  fs.writeFile('./data/creations.json', JSON.stringify(creationsCopy), (err) => {
+    if (err) throw err;
+  })
+
+  let drinksCopy = drinks.slice()
+  let itemIndexDrink = drinksCopy.findIndex(index => {
+    return index.strDrink === req.params.id
+  })
+  drinksCopy.splice(itemIndexDrink, 1)
+  fs.writeFile('./data/drinks.json', JSON.stringify(drinksCopy), (err) => {
+    if (err) throw err;
+  })
+  
+  res.send(creationsCopy)
 })
 
 module.exports = router;
