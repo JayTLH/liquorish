@@ -1,24 +1,26 @@
 {
-  "name": "jasontszlik-huang-capstone",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "install:client": "cd client && npm install",
-    "install:server": "cd server && npm install",
+    "start": "nodemon index.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon index.js",
     "start:client": "cd client && npm start",
-    "start:server": "cd server && nodemon server",
-    "start:all": "cd client && npm start && cd ../server && nodemon server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JayTLH/jasontszlik-huang-capstone.git"
+    "build:client": "cd client && npm run build",
+    "setup:all": "npm install && cd client && npm install",
+    "setup:client:prod": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JayTLH/jasontszlik-huang-capstone/issues"
-  },
-  "homepage": "https://github.com/JayTLH/jasontszlik-huang-capstone#readme"
+  "dependencies": {
+    "concurrently": "^5.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nanoid": "^2.1.7",
+    "nodemon": "^1.19.4"
+  }
 }

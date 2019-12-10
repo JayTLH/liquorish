@@ -1,0 +1,1 @@
+web: concurrently "npm:setup:client:prod" "npm:start:prod" 
