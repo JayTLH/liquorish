@@ -3,6 +3,7 @@ const PORT = process.env.PORT || 8080
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const path = require('path');
 
 // import routes
 const drinksRoute = require('./routes/drinks')
@@ -12,7 +13,10 @@ const creationsRoute = require('./routes/creations')
 
 // middleware
 app.use(express.static('public'))
-app.use(express.json())
+app.use(express.json());
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+}
 app.use(cors())
 
 // setting routes
@@ -20,6 +24,12 @@ app.use('/drinks', drinksRoute)
 app.use('/ingredients', ingredientsRoute)
 app.use('/user', userRoute)
 app.use('/creations', creationsRoute)
+
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'));
+  });
+}
 
 // setting the server port
 app.listen(PORT, () => {
