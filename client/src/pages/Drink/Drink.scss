@@ -88,6 +88,15 @@
   }
 }
 
+// .white-background {
+//   background: white;
+//   width: 100vw;
+//   height: 100vh;
+//   position: absolute;
+//   z-index: -1;
+//   clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+// }
+
 @keyframes fadein {
   from {
     opacity: 0;

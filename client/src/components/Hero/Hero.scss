@@ -52,6 +52,12 @@
     }
   }
 
+  &__animate {
+    position: relative;
+    left: -1000px;
+    z-index: 1;
+  }
+
   &__button-container {
     width: 300px;
     position: absolute;

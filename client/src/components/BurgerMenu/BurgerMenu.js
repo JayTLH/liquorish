@@ -5,13 +5,20 @@ import { slide as Menu } from "react-burger-menu";
 
 // styles & assets
 import "./BurgerMenu.scss";
-// import logo from "../../styles/assets/logos/logo.png";
 
 export default class BurgerMenu extends Component {
   render() {
     const burStyle = {
       bmOverlay: {
-        background: 'none'
+        background: 'none',
+      },
+      bmMenu: {
+        borderTopLeftRadius: '50%',
+        borderBottomLeftRadius: '50%',
+        width: '650px'
+      },
+      bmItemList: {
+        padding: '150px 0 0 70px'
       }
     }
 
@@ -33,7 +40,7 @@ export default class BurgerMenu extends Component {
           </Link>
         </button>
         <button className="nav__button">
-          <Link to="/creations">
+          <Link to="/creationspage">
             <p className="nav__link">Creations</p>
           </Link>
         </button>

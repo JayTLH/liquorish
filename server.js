@@ -1,9 +1,9 @@
 // import packages
-const PORT = process.env.PORT || 8080
 const express = require('express')
 const app = express()
 const cors = require('cors')
 const path = require('path');
+const PORT = process.env.PORT || 8080;
 
 // import routes
 const drinksRoute = require('./routes/drinks')
@@ -18,6 +18,9 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
 }
 app.use(cors())
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+}
 
 // setting routes
 app.use('/drinks', drinksRoute)
