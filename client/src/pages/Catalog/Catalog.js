@@ -23,6 +23,8 @@ const customStyles = {
   })
 }
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class Catalog extends Component {
   state = {
     data: null,
@@ -31,11 +33,11 @@ export default class Catalog extends Component {
   }
 
   getDrinkData = () => {
-    return Axios.get("http://localhost:8080/drinks");
+    return Axios.get(`${pingURL}/drinks`);
   };
 
   getIngredientData = () => {
-    return Axios.get("http://localhost:8080/ingredients");
+    return Axios.get(`${pingURL}/ingredients`);
   };
 
   getData = () => {
@@ -107,6 +109,7 @@ export default class Catalog extends Component {
     if (this.state.data) {
       return (
         <div className="catalog" onScroll={this.scrollAppear}>
+          <div className="background"></div>
           <NavMenu data={this.state.data} {...this.props} />
 
           <div className="catalog__search" onChange={this.liveSearch}>

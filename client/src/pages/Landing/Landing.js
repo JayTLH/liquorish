@@ -9,10 +9,12 @@ import './Landing.scss';
 import NavMenu from '../../components/NavMenu';
 import Hero from '../../components/Hero';
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class Landing extends Component {
   // getting api data
   getApi = () => {
-    Axios.get("http://localhost:8080/drinks")
+    Axios.get(`${pingURL}/drinks`)
       .then(res => {
         this.setState({
           data: res.data

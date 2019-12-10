@@ -12,6 +12,8 @@ import CreationsModal from "../../components/CreationsModal";
 import TopButton from '../../components/TopButton';
 import DeleteButton from '../../components/DeleteButton';
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class Creations extends Component {
   state = {
     data: null,
@@ -19,11 +21,11 @@ export default class Creations extends Component {
   }
 
   getDrinkData = () => {
-    return Axios.get("http://localhost:8080/drinks");
+    return Axios.get(`${pingURL}/drinks`);
   };
 
   getCreationsData = () => {
-    return Axios.get("http://localhost:8080/creations");
+    return Axios.get(`${pingURL}/creations`);
   };
 
   getData = () => {
@@ -107,11 +109,11 @@ export default class Creations extends Component {
       }
     }
 
-    Axios.post("http://localhost:8080/creations", formDataBody)
+    Axios.post(`${pingURL}/creations`, formDataBody)
   }
 
   removeButton = (e) => {
-    Axios.delete(`http://localhost:8080/creations/${e.target.id}`)
+    Axios.delete(`${pingURL}/creations/${e.target.id}`)
       .then(res => {
         this.setState({
           creationsData: res.data

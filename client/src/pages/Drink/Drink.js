@@ -11,6 +11,8 @@ import NavMenu from "../../components/NavMenu";
 import LikeButton from '../../components/LikeButton';
 import DrinkModal from "../../components/DrinkModal";
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class Drink extends Component {
   state = {
     data: null,
@@ -18,11 +20,11 @@ export default class Drink extends Component {
   }
 
   getDrinkData = () => {
-    return Axios.get("http://localhost:8080/drinks");
+    return Axios.get(`${pingUrl}/drinks`);
   };
 
   getIngredientData = () => {
-    return Axios.get("http://localhost:8080/ingredients");
+    return Axios.get(`${pingUrl}/ingredients`);
   };
 
   getData = () => {

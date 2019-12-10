@@ -7,6 +7,8 @@ import './LikeButton.scss';
 import like from '../../styles/assets/icons/icon-like.png';
 import likeActive from '../../styles/assets/icons/icon-like-active.png';
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class LikeButton extends Component {
   state = {
     like: false
@@ -14,7 +16,7 @@ export default class LikeButton extends Component {
 
   toggleLike = (e) => {
     if (!this.state.like) {
-      Axios.post("http://localhost:8080/user", e)
+      Axios.post(`${pingURL}/user`, e)
         .then(res => {
           this.setState({
             like: !this.state.like
@@ -24,7 +26,7 @@ export default class LikeButton extends Component {
           console.error(err)
         })
     } else {
-      Axios.delete(`http://localhost:8080/user/${e.strDrink}`)
+      Axios.delete(`${pingURL}/user/${e.strDrink}`)
         .then(res => {
           this.setState({
             like: !this.state.like
@@ -38,7 +40,7 @@ export default class LikeButton extends Component {
 
   // checking to see if user already liked the drink
   checkLike = () => {
-    Axios.get("http://localhost:8080/user")
+    Axios.get(`${pingURL}/user`)
       .then(res => {
         let findLike = res.data.find(index => {
           return (index.strDrink === this.props.match.params.drinkName)

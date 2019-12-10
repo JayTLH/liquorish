@@ -11,6 +11,8 @@ import NavMenu from "../../components/NavMenu";
 import DeleteButton from '../../components/DeleteButton';
 import TopButton from '../../components/TopButton';
 
+const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+
 export default class Favorites extends Component {
   state = {
     data: null,
@@ -18,11 +20,11 @@ export default class Favorites extends Component {
   }
 
   getDrinkData = () => {
-    return Axios.get("http://localhost:8080/drinks");
+    return Axios.get(`${pingURL}/drinks`);
   };
 
   getCreationsData = () => {
-    return Axios.get("http://localhost:8080/user");
+    return Axios.get(`${pingURL}/user`);
   };
 
   getData = () => {
@@ -40,7 +42,7 @@ export default class Favorites extends Component {
 
   // delete favorite function
   removeButton = (e) => {
-    Axios.delete(`http://localhost:8080/user/${e.target.id}`)
+    Axios.delete(`${pingURL}/user/${e.target.id}`)
       .then(res => {
         this.setState({
           userData: res.data
@@ -59,6 +61,7 @@ export default class Favorites extends Component {
     if (this.state.data) {
       return (
         <div className="favorites">
+          <div className="background"></div>
           <NavMenu data={this.state.data} {...this.props} />
           <div className="favorites__container">
             {this.state.userData.length ? this.state.userData.map(index => {
