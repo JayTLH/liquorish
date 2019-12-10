@@ -69,7 +69,7 @@ export default class Drink extends Component {
           <div className="drink__container">
             <div className="drink__top-box">
               <h1 className="drink__name">{strDrink}</h1>
-              <LikeButton strDrink={strDrink} findDrink={findDrink} {...this.props}/>
+              <LikeButton strDrink={strDrink} findDrink={findDrink} {...this.props} />
             </div>
 
             <div className="drink__box">

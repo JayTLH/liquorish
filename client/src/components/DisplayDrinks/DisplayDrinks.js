@@ -34,12 +34,12 @@ export default class DisplayDrinks extends Component {
 
     return (
       <div className="display-drinks">
-        <div className="display-drinks__filter"></div>
         {/* renders popular drinks when the popular button is clicked */}
         {this.props.display === "popular" ? popDrinks.map(index => {
           return (
             <Link to={index.strDrink} key={index.strDrink}>
               <div className="display-drinks__card">
+                <div className="display-drinks__filter"></div>
                 <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
                 <p className="display-drinks__name">{index.strDrink}</p>
               </div>

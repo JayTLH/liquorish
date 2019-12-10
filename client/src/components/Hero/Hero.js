@@ -1,6 +1,7 @@
 // packages
 import React, { Component } from "react";
 import { motion } from "framer-motion";
+import anime from "animejs";
 
 // styles & assets
 import "./Hero.scss";
@@ -19,6 +20,19 @@ export default class Hero extends Component {
       display: e.target.value
     });
   };
+
+  animate = () => {
+    anime({
+      targets: this.display,
+      translateX: { value: 1000 },
+      duration: 800,
+      easing: 'easeInOutExpo'
+    })
+  }
+
+  componentDidUpdate() {
+    this.animate()
+  }
 
   render() {
     return (
@@ -50,11 +64,15 @@ export default class Hero extends Component {
         ) : null}
 
         {this.state.display === "popular" ? (
-          <DisplayDrinks data={this.props.data} display={this.state.display} />
+          <div className="hero__animate" ref={display => (this.display = display)}>
+            <DisplayDrinks data={this.props.data} display={this.state.display} />
+          </div>
         ) : null}
 
         {this.state.display === "random" ? (
-          <DisplayDrinks data={this.props.data} display={this.state.display} />
+          <div className="hero__animate" ref={display => (this.display = display)}>
+            <DisplayDrinks data={this.props.data} display={this.state.display} ref={display => (this.display = display)} />
+          </div>
         ) : null}
 
         <div className="hero__button-container">
