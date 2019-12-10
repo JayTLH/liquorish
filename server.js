@@ -1,4 +1,5 @@
 // import packages
+const PORT = process.env.PORT || 8080
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -21,6 +22,6 @@ app.use('/user', userRoute)
 app.use('/creations', creationsRoute)
 
 // setting the server port
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log('server is running on port 8080')
 })
