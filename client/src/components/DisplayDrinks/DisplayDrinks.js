@@ -52,6 +52,7 @@ export default class DisplayDrinks extends Component {
           return (
             <Link to={index.strDrink} key={index.strDrink}>
               <div className="display-drinks__card">
+                <div className="display-drinks__filter"></div>
                 <img className="display-drinks__img" src={index.strDrinkThumb} alt={index.strDrink} />
                 <p className="display-drinks__name">{index.strDrink}</p>
               </div>
