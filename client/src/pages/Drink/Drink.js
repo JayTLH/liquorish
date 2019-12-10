@@ -20,11 +20,11 @@ export default class Drink extends Component {
   }
 
   getDrinkData = () => {
-    return Axios.get(`${pingUrl}/drinks`);
+    return Axios.get(`${pingURL}/drinks`);
   };
 
   getIngredientData = () => {
-    return Axios.get(`${pingUrl}/ingredients`);
+    return Axios.get(`${pingURL}/ingredients`);
   };
 
   getData = () => {

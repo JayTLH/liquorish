@@ -132,6 +132,7 @@ export default class Creations extends Component {
     if (this.state.data) {
       return (
         <div className="creations">
+          <div className="background"></div>
           <NavMenu data={this.state.data} {...this.props} />
 
           <div className="creations__container">
