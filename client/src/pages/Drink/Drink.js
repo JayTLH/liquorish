@@ -66,7 +66,7 @@ export default class Drink extends Component {
       return (
         <div className="drink">
           <NavMenu data={this.state.data} {...this.props} />
-          {/* <div className="white-background"></div> */}
+          <div className="background"></div>
           <div className="drink__container">
             <div className="drink__top-box">
               <h1 className="drink__name">{strDrink}</h1>
