@@ -11,7 +11,7 @@ import NavMenu from "../../components/NavMenu";
 import LikeButton from '../../components/LikeButton';
 import DrinkModal from "../../components/DrinkModal";
 
-const pingURL = `${process.env.REACT_APP_SERVER || "http://localhost:8080"}`
+const pingURL = `${process.env.REACT_APP_SERVER || ''}`
 
 export default class Drink extends Component {
   state = {

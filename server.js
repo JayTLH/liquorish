@@ -14,13 +14,10 @@ const creationsRoute = require('./routes/creations')
 // middleware
 app.use(express.static('public'))
 app.use(express.json());
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
-}
 app.use(cors())
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
-}
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, 'client/build')));
+  }
 
 // setting routes
 app.use('/drinks', drinksRoute)

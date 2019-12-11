@@ -11,7 +11,7 @@ import NavMenu from "../../components/NavMenu";
 import DeleteButton from '../../components/DeleteButton';
 import TopButton from '../../components/TopButton';
 
-const pingURL = `${process.env.REACT_APP_SERVER || "http://localhost:8080"}`
+const pingURL = `${process.env.REACT_APP_SERVER || ''}`
 
 export default class Favorites extends Component {
   state = {
