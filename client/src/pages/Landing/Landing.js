@@ -14,7 +14,8 @@ const pingURL = `${process.env.REACT_APP_SERVER || ''}`
 export default class Landing extends Component {
   // getting api data
   getApi = () => {
-    Axios.get(`${pingURL}/drinks`)
+    // Axios.get(`${pingURL}/drinks`)
+    Axios.get(`${process.env.REACT_APP_SERVER || ''}/drinks`)
       .then(res => {
         this.setState({
           data: res.data
