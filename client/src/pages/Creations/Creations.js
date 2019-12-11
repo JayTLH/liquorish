@@ -12,7 +12,7 @@ import CreationsModal from "../../components/CreationsModal";
 import TopButton from '../../components/TopButton';
 import DeleteButton from '../../components/DeleteButton';
 
-const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+const pingURL = `${process.env.REACT_APP_SERVER || "http://localhost:8080"}`
 
 export default class Creations extends Component {
   state = {

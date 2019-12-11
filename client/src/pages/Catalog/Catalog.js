@@ -23,7 +23,7 @@ const customStyles = {
   })
 }
 
-const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+const pingURL = `${process.env.REACT_APP_SERVER || "http://localhost:8080"}`
 
 export default class Catalog extends Component {
   state = {

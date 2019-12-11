@@ -7,7 +7,7 @@ import './LikeButton.scss';
 import like from '../../styles/assets/icons/icon-like.png';
 import likeActive from '../../styles/assets/icons/icon-like-active.png';
 
-const pingURL = `${process.env.CREATE_REACT_APP_BACKEND || "http://localhost:8080"}`
+const pingURL = `${process.env.REACT_APP_SERVER || "http://localhost:8080"}`
 
 export default class LikeButton extends Component {
   state = {
