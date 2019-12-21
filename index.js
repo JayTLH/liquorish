@@ -15,9 +15,9 @@ const creationsRoute = require('./routes/creations')
 app.use(express.static('public'))
 app.use(express.json());
 app.use(cors())
-  if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-  }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+}
 
 // setting routes
 app.use('/drinks', drinksRoute)
@@ -33,5 +33,5 @@ if (process.env.NODE_ENV === 'production') {
 
 // setting the server port
 app.listen(PORT, () => {
-  console.log('server is running on port 8080')
+  console.log('server is running on port:', PORT)
 })

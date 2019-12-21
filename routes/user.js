@@ -7,7 +7,6 @@ const fs = require('fs');
 let user = require('../data/user.json');
 
 // setting endpoints
-
 // sending user data
 router.get('/', (req, res) => {
   res.send(user);

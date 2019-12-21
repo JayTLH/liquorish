@@ -2,7 +2,27 @@
 
 Created by Jason Tsz Lik Huang.
 
-TODO: make documentation
+Run the app with 'npm run start:prod'
+
+Tech Stack:
+Front-end
+React
+
+Back-end
+Node.js
+Express.js
+Multer
+
+Misc
+react-burger-menu
+react-autosuggest
+react-select
+nanoid
+framer-motion
+animejs
+
+Deployed with Heroku
+https://capstone-liquorish.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
