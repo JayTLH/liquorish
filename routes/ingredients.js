@@ -3,11 +3,13 @@ const express = require('express')
 const router = express.Router()
 
 // import data
-const ingredients = require('../data/ingredients.json')
+const Ingredients = require("../models/ingredients")
 
 // setting endpoints
 router.get('/', (req, res) => {
-  res.send(ingredients)
+  Ingredients.find({}, (error, ing) => {
+    res.send(ing)
+  })
 })
 
 module.exports = router

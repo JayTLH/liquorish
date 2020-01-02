@@ -7,11 +7,9 @@ const Drinks = require("../models/drinks");
 
 // setting endpoints
 router.get('/', (req, res) => {
-
-  Drinks.find({}, (error, drinkItem) => {
-    res.send(drinkItem)
+  Drinks.find({}, (error, dri) => {
+    res.send(dri)
   })
-
 })
 
 module.exports = router
