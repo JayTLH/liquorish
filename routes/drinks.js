@@ -1,13 +1,17 @@
 // import packages
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
 // import data
-const drinks = require('../data/drinks.json')
+const Drinks = require("../models/drinks");
 
 // setting endpoints
 router.get('/', (req, res) => {
-  res.send(drinks)
+
+  Drinks.find({}, (error, drinkItem) => {
+    res.send(drinkItem)
+  })
+
 })
 
 module.exports = router

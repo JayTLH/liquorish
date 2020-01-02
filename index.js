@@ -5,6 +5,19 @@ const cors = require('cors')
 const path = require('path');
 const PORT = process.env.PORT || 8080;
 
+// database
+const mongoose = require('mongoose');
+mongoose.connect("mongodb+srv://admin:k1i2e3l4@playground-kyfkl.mongodb.net/liquorish-capstone?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+.then(res => {
+  console.log("MongoDB connected")
+  // console.log(res)
+  // console.log(res.connections)
+})
+.catch(err => {
+  console.error(err)
+})
+// const uri = "mongodb+srv://admin:" + process.env.MONGO_ATLAS_PW +"@playground-kyfkl.mongodb.net/test?retryWrites=true&w=majority";
+
 // import routes
 const drinksRoute = require('./routes/drinks')
 const ingredientsRoute = require('./routes/ingredients')
