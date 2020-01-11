@@ -1,8 +1,8 @@
-# BarKeep
+# Liquorish
 
 Created by Jason Tsz Lik Huang.
 
-Run the app with 'npm run start:prod'
+Run the app with 'npm run start:prod' and open browser to http://localhost:8080/asdf
 
 Tech Stack:
 Front-end
@@ -13,6 +13,9 @@ Node.js
 Express.js
 Multer
 
+Database
+MongoDB
+
 Misc
 react-burger-menu
 react-autosuggest
@@ -20,9 +23,6 @@ react-select
 nanoid
 framer-motion
 animejs
-
-Deployed with Heroku
-https://capstone-liquorish.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
