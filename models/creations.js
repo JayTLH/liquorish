@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
-const drinksSchema = mongoose.Schema({
+const creationsSchema = mongoose.Schema({
   idDrink: String,
   strDrink: String,
   strCategory: String,
   strAlcoholic: String,
   strGlass: String,
   strInstructions: String,
-  strDrinkThumb: String,
+  strDrinkThumb: Buffer,
   ingredients__001: String,
   ingredients__002: String,
   ingredients__003: String,
@@ -30,4 +30,4 @@ const drinksSchema = mongoose.Schema({
   measurements__010: String
 });
 
-module.exports = mongoose.model("Drinks", drinksSchema, "drinks")
+module.exports = mongoose.model("Creations", creationsSchema, "creations")

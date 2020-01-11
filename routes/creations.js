@@ -17,13 +17,15 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage })
 
 // import data
-let creations = require('../data/creations.json');
-let drinks = require('../data/drinks.json');
+let Creations = require('../models/creations');
+let Drinks = require('../models/drinks');
 
 // setting endpoints
 // sending creations data
 router.get('/', (req, res) => {
-  res.send(creations);
+  Creations.find({}, (err, crea) => {
+    res.send(crea);
+  })
 });
 
 // recieving new created item
@@ -96,7 +98,7 @@ router.post('/', upload.single('uploadImage'), (req, res) => {
     strAlcoholic: req.body.strAlcoholic,
     strGlass: req.body.strGlass,
     strInstructions: req.body.strInstructions,
-    strDrinkThumb: `http://localhost:8080/uploads/${req.file.filename}`,
+    strDrinkThumb: fs.readFileSync(`public/uploads/${req.file.filename}`),
     ingredients__001: reqBodyIng01,
     measurements__001: reqBodyMea01,
     ingredients__002: reqBodyIng02,
@@ -119,18 +121,15 @@ router.post('/', upload.single('uploadImage'), (req, res) => {
     measurements__010: reqBodyMea10
   }
 
-  creations.push(incomingUpload);
-  fs.writeFile('./data/creations.json', JSON.stringify(creations), (err) => {
-    if (err) throw err;
-  })
+  let newCrea = new Creations(incomingUpload)
+  newCrea.save()
+    .then(data => res.status(201).json(data))
+    .catch(err => console.error(err))
 
-  let drinkCopy = drinks.slice()
-  drinkCopy.push(incomingUpload)
-  fs.writeFile('./data/drinks.json', JSON.stringify(drinkCopy), (err) => {
-    if (err) throw err;
-  })
-
-  res.status(201).send(incomingUpload);
+  let newDrink = new Drinks(incomingUpload)
+  newDrink.save()
+    .then(data => res.status(201).json(data))
+    .catch(err => console.error(err))
 });
 
 // removing created item
@@ -152,7 +151,7 @@ router.delete('/:id', (req, res) => {
   fs.writeFile('./data/drinks.json', JSON.stringify(drinksCopy), (err) => {
     if (err) throw err;
   })
-  
+
   res.send(creationsCopy)
 })
 

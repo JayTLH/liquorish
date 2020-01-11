@@ -1,6 +1,7 @@
 // packages
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import BaseSF from 'base64-arraybuffer';
 import Axios from "axios";
 
 // styles & assets
@@ -134,13 +135,13 @@ export default class Creations extends Component {
         <div className="creations">
           <div className="background"></div>
           <NavMenu data={this.state.data} {...this.props} />
-
           <div className="creations__container">
             {this.state.creationsData.length ? this.state.creationsData.map(index => {
+              let imgSrc = BaseSF.encode(this.state.creationsData[0].strDrinkThumb.data)
               return (
                 <div className="creations__card" key={index.strDrink}>
                 <Link to={`/${index.strDrink}`}>
-                  <img className="creations__img" src={index.strDrinkThumb} alt="drink" />
+                  <img className="creations__img" src={`data:image/jpeg;base64,${imgSrc}`} alt="drink" />
                 </Link>
                 <div className="creations__text">
                   <div className="creations__header">

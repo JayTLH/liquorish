@@ -16,7 +16,6 @@ router.get('/', (req, res) => {
 // recieving new liked item
 router.post('/', (req, res) => {
   let newFav = new User(req.body);
-
   newFav.save()
     .then(data => res.status(201).json(data))
     .catch(err => console.error(err))
@@ -24,9 +23,11 @@ router.post('/', (req, res) => {
 
 // removing liked item
 router.delete('/:id', (req, res) => {
-  User.find({ strDrink: req.params.id }, (err, fav) => {
-    res.send(fav)
-  }).remove().exec()
+  User.deleteOne({ strDrink: req.params.id }, (err, fav) => {
+    User.find({}, (error, use) => {
+      res.send(use);
+    })
+  })
 })
 
 module.exports = router;
