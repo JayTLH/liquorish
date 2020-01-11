@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import nanoid from 'nanoid';
+import BaseSF from 'base64-arraybuffer';
 
 // styles & assets
 import "./Drink.scss";
@@ -65,6 +66,8 @@ export default class Drink extends Component {
         })
       })
 
+      let imgSrc = BaseSF.encode(strDrinkThumb.data)
+
       return (
         <div className="drink">
           <NavMenu data={this.state.data} {...this.props} />
@@ -76,7 +79,8 @@ export default class Drink extends Component {
             </div>
 
             <div className="drink__box">
-              <img className="drink__img" src={strDrinkThumb} alt={strDrink} />
+              {strDrinkThumb[0] === "h" ? <img className="drink__img" src={strDrinkThumb} alt={strDrink} />
+              : <img className="drink__img" src={`data:image/jpeg;base64,${imgSrc}`} alt="drink" />}
 
               <div className="drink__text">
                 <div className="drink__tags">

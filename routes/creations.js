@@ -126,10 +126,10 @@ router.post('/', upload.single('uploadImage'), (req, res) => {
     .then(data => res.status(201).json(data))
     .catch(err => console.error(err))
 
-  let newDrink = new Drinks(incomingUpload)
-  newDrink.save()
-    .then(data => res.status(201).json(data))
-    .catch(err => console.error(err))
+  // let newDrink = new Drinks(incomingUpload)
+  // newDrink.save()
+  //   .then(data => res.status(201).json(data))
+  //   .catch(err => console.error(err))
 });
 
 // removing created item
