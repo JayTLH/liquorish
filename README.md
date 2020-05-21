@@ -2,7 +2,7 @@
 
 Created by Jason Tsz Lik Huang.
 
-Run the app with 'npm run start:prod' and open browser to http://localhost:8080/asdf
+Run the app with 'npm run start:prod' and open browser to http://localhost:8080
 
 Tech Stack:
 Front-end
